@@ -8,8 +8,8 @@
 
 **[Website](https://kitsunoff.github.io/awesome-json2dir/) · [RFC J2D-1](spec/rfc-json2dir.md) · [Conformance suite](conformance/README.md) · [Manifesto](MANIFESTO.md)**
 
-[![Projects](https://img.shields.io/badge/projects-21-blueviolet?style=flat-square)](#contents)
-[![Languages](https://img.shields.io/badge/languages-Rust%20%C2%B7%20Zig%20%C2%B7%20C%23%20%C2%B7%20Scheme%20%C2%B7%20Go%20%C2%B7%20MSBuild%20%C2%B7%20Nix%20%C2%B7%20Lean%20%C2%B7%20LLVM%20IR%20%C2%B7%20F%2A%20%C2%B7%20Agda%20%C2%B7%20ATS%20%C2%B7%20Brainfuck%20%C2%B7%20bimbo--lang%20%C2%B7%20Shell-orange?style=flat-square)](#ports-and-rewrites)
+[![Projects](https://img.shields.io/badge/projects-22-blueviolet?style=flat-square)](#contents)
+[![Languages](https://img.shields.io/badge/languages-Rust%20%C2%B7%20Zig%20%C2%B7%20C%23%20%C2%B7%20Scheme%20%C2%B7%20Go%20%C2%B7%20MSBuild%20%C2%B7%20Nix%20%C2%B7%20Lean%20%C2%B7%20LLVM%20IR%20%C2%B7%20F%2A%20%C2%B7%20Agda%20%C2%B7%20ATS%20%C2%B7%20Brainfuck%20%C2%B7%20bimbo--lang%20%C2%B7%20Haskell%20%C2%B7%20Shell-orange?style=flat-square)](#ports-and-rewrites)
 [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey?style=flat-square)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](CONTRIBUTING.md)
 
@@ -79,6 +79,7 @@ The root of the document must be an object. See [RFC J2D-1](spec/rfc-json2dir.md
 - [TheMaxMur/json2dir-agda](https://github.com/TheMaxMur/json2dir-agda) ![Agda](https://img.shields.io/badge/-Agda-5E5086?style=flat-square) - JSON parser, name checks, duplicate handling, ordering and traversal written in Agda and compiled through the GHC backend; only small `COMPILE GHC` bindings for IO are handwritten. Pure modules use `--safe`, and the name checker and classifier carry proofs that follow json2dir-lean's specification.
 - [TheMaxMur/json2dir-ats](https://github.com/TheMaxMur/json2dir-ats) ![ATS](https://img.shields.io/badge/-ATS2-4A4A4A?style=flat-square) - ATS2 port with the JSON parser, Unicode decoder, key sorting, path validation and tree writer in one `main.dats`. Owned trees and buffers use linear types and are freed explicitly, with no garbage collector. Documents its compatibility with the Rust original rule by rule.
 - [TheMaxMur/json2dir-bimbo](https://github.com/TheMaxMur/json2dir-bimbo) ![bimbo-lang](https://img.shields.io/badge/-%F0%9F%92%85%20bimbo--lang-E75480?style=flat-square) - A new compiled language built for one mission: rewriting json2dir. The JSON parser and tree walk live in `src/json2dir.bimbo`; a Python frontend emits LLVM IR, and a small C runtime supplies strings, maps and POSIX calls. Functions are `bestie`, loops `strut`, returns `gimme`.
+- [KovalevDima/json2dir-hs](https://github.com/KovalevDima/json2dir-hs) ![Haskell](https://img.shields.io/badge/-Haskell-5D4F85?style=flat-square&logo=haskell&logoColor=white) - A one-file Haskell take on the scheme with `aeson` and `directory`, written by hand without LLMs, according to its author. Looser than [RFC J2D-1](spec/rfc-json2dir.md): names are joined as paths without validation, scripts get no execute bit, and numbers, booleans and `null` are written to files instead of rejected.
 
 ## Alternative takes
 
@@ -119,6 +120,7 @@ Projects that exist to explain why `json2dir` should not.
 | [json2dir-agda](https://github.com/TheMaxMur/json2dir-agda) | Agda | JSON → dir | ISC |
 | [json2dir-ats](https://github.com/TheMaxMur/json2dir-ats) | ATS2 | JSON → dir | ISC |
 | [json2dir-bimbo](https://github.com/TheMaxMur/json2dir-bimbo) | bimbo-lang → LLVM IR | JSON → dir | ISC |
+| [json2dir-hs](https://github.com/KovalevDima/json2dir-hs) | Haskell | JSON → dir | BSD-3-Clause |
 | [json2llm](https://github.com/lcensies/json2llm) | Go + LLM | JSON → LLM → dir | None specified |
 | [kube-operator2dir](https://github.com/71g3pf4c3/kube-operator2dir) | Go + Kubernetes | CR → node dirs | Apache-2.0 (per README) |
 | [zakon2dir](https://github.com/71g3pf4c3/zakon2dir) | Russian legalese | JSON ⇄ dir, by law | GPL-3.0 |
@@ -133,7 +135,7 @@ Projects that exist to explain why `json2dir` should not.
 
 Implementations that have been requested but do not exist yet. Be the first:
 
-- [ ] Haskell
+- [x] Haskell: [json2dir-hs](https://github.com/KovalevDima/json2dir-hs)
 - [x] Nix (pure evaluation, `builtins` only): [json2dir-nix](https://github.com/TheMaxMur/json2dir-nix), with a shell launcher for the writes
 - [ ] Assembly
 - [ ] JS
