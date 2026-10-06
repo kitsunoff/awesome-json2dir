@@ -8,8 +8,8 @@
 
 **[Website](https://kitsunoff.github.io/awesome-json2dir/) · [RFC J2D-1](spec/rfc-json2dir.md) · [Conformance suite](conformance/README.md) · [Manifesto](MANIFESTO.md)**
 
-[![Projects](https://img.shields.io/badge/projects-9-blueviolet?style=flat-square)](#contents)
-[![Languages](https://img.shields.io/badge/languages-Rust%20%C2%B7%20Zig%20%C2%B7%20C%23%20%C2%B7%20Scheme%20%C2%B7%20Go%20%C2%B7%20MSBuild-orange?style=flat-square)](#ports-and-rewrites)
+[![Projects](https://img.shields.io/badge/projects-13-blueviolet?style=flat-square)](#contents)
+[![Languages](https://img.shields.io/badge/languages-Rust%20%C2%B7%20Zig%20%C2%B7%20C%23%20%C2%B7%20Scheme%20%C2%B7%20Go%20%C2%B7%20MSBuild%20%C2%B7%20Nix%20%C2%B7%20Lean%20%C2%B7%20LLVM%20IR%20%C2%B7%20Shell-orange?style=flat-square)](#ports-and-rewrites)
 [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey?style=flat-square)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](CONTRIBUTING.md)
 
@@ -37,6 +37,7 @@
 - [Ports and rewrites](#ports-and-rewrites)
 - [Alternative takes](#alternative-takes)
 - [Inverse tools](#inverse-tools)
+- [Tooling](#tooling)
 - [Rebuttals](#rebuttals)
 - [At a glance](#at-a-glance)
 - [Wanted](#wanted)
@@ -71,6 +72,9 @@ The root of the document must be an object. See [RFC J2D-1](spec/rfc-json2dir.md
 - [TheMaxMur/json2dir-scheme](https://github.com/TheMaxMur/json2dir-scheme) ![Scheme](https://img.shields.io/badge/-Guile%20Scheme-3B5BA5?style=flat-square&logo=gnu&logoColor=white) - Guile Scheme port that preserves the original Unix behavior, with its own JSON parser built on Guile 3.0 standard modules only. Packaged as a Nix flake.
 - [daniilvaino/json2dir-cs](https://github.com/daniilvaino/json2dir-cs) ![C#](https://img.shields.io/badge/-C%23-512BD4?style=flat-square&logo=dotnet&logoColor=white) - The whole tool as a single C# expression: `System.Text.Json`, LINQ and a self-applied recursive lambda.
 - [daniilvaino/json2dir-msbuild](https://github.com/daniilvaino/json2dir-msbuild) ![MSBuild](https://img.shields.io/badge/-MSBuild-512BD4?style=flat-square&logo=dotnet&logoColor=white) - A single MSBuild project file. No C#, no inline tasks, no `Exec`: JSON is parsed with .NET regex balancing groups, and recursion goes through the `<MSBuild>` task calling its own project.
+- [TheMaxMur/json2dir-nix](https://github.com/TheMaxMur/json2dir-nix) ![Nix](https://img.shields.io/badge/-Nix-5277C3?style=flat-square&logo=nixos&logoColor=white) - JSON parsing, validation and traversal in `lib.nix` using only Nix builtins; a small shell launcher runs the generated filesystem operations, since evaluation cannot write files. Validates the whole tree before touching the destination. Also a library: `mkTree` builds a tree into the Nix store as a derivation.
+- [tsalkenov/json2dir-lean](https://github.com/tsalkenov/json2dir-lean) ![Lean 4](https://img.shields.io/badge/-Lean%204-000000?style=flat-square) - Lean 4 port whose key parsing and value classification are pure functions with proofs: every accepted key is one nonempty relative component without `.` or `..`, and each JSON form maps to the intended operation. Filesystem effects are not covered by the proofs.
+- [TheMaxMur/json2dir-llvm-IR](https://github.com/TheMaxMur/json2dir-llvm-IR) ![LLVM IR](https://img.shields.io/badge/-LLVM%20IR-262D3A?style=flat-square&logo=llvm&logoColor=white) - Handwritten textual LLVM IR: JSON parser, UTF-8 handling, key sorting and tree creation, linked only against libc. Differentially tested against the Rust original on 2460 input and directory-state combinations.
 
 ## Alternative takes
 
@@ -79,6 +83,10 @@ The root of the document must be an object. See [RFC J2D-1](spec/rfc-json2dir.md
 ## Inverse tools
 
 - [71g3pf4c3/dir2json](https://github.com/71g3pf4c3/dir2json) ![Rust](https://img.shields.io/badge/-Rust-000000?style=flat-square&logo=rust&logoColor=white) - The scheme in reverse: walks a directory and prints a `json2dir`-compatible JSON object. Never follows symlinks.
+
+## Tooling
+
+- [lcensies/json2slop](https://github.com/lcensies/json2slop) ![Shell](https://img.shields.io/badge/-Shell-4EAA25?style=flat-square&logo=gnubash&logoColor=white) ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white) - One CLI and one container image in front of the other implementations: pick a backend with `-b` (`rust`, `zig`, `scheme`, `cs`, `llm`) or run `reverse` through `dir2json`. Options a backend cannot honour are a usage error, never silently dropped. Includes a smoke test that applies the same fixtures with every backend and compares the trees.
 
 ## Rebuttals
 
@@ -96,7 +104,11 @@ Projects that exist to explain why `json2dir` should not.
 | [json2dir-scheme](https://github.com/TheMaxMur/json2dir-scheme) | Guile Scheme | JSON → dir | ISC |
 | [json2dir-cs](https://github.com/daniilvaino/json2dir-cs) | C# | JSON → dir | Unlicense |
 | [json2dir-msbuild](https://github.com/daniilvaino/json2dir-msbuild) | MSBuild | JSON → dir | Unlicense |
+| [json2dir-nix](https://github.com/TheMaxMur/json2dir-nix) | Nix | JSON → dir | ISC |
+| [json2dir-lean](https://github.com/tsalkenov/json2dir-lean) | Lean 4 | JSON → dir | WTFPL |
+| [json2dir-llvm-IR](https://github.com/TheMaxMur/json2dir-llvm-IR) | LLVM IR | JSON → dir | ISC |
 | [json2llm](https://github.com/lcensies/json2llm) | Go + LLM | JSON → LLM → dir | None specified |
+| [json2slop](https://github.com/lcensies/json2slop) | Shell + Docker | JSON → any backend → dir | None specified |
 | [dir2json](https://github.com/71g3pf4c3/dir2json) | Rust | dir → JSON | GPL-3.0 |
 | [json2json](https://github.com/71g3pf4c3/json2json) | Rust | JSON → JSON | GPL-3.0 |
 | [dir2dir](https://github.com/71g3pf4c3/dir2dir) | none yet | dir → dir | GPL-3.0 |
@@ -106,7 +118,7 @@ Projects that exist to explain why `json2dir` should not.
 Implementations that have been requested but do not exist yet. Be the first:
 
 - [ ] Haskell
-- [ ] Nix (pure evaluation, `builtins` only)
+- [x] Nix (pure evaluation, `builtins` only): [json2dir-nix](https://github.com/TheMaxMur/json2dir-nix), with a shell launcher for the writes
 - [ ] Assembly
 - [x] A test harness that checks every implementation against the same fixtures: the [conformance suite](conformance/README.md)
 

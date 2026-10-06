@@ -10,6 +10,7 @@ Thank you for adding to the list.
    - **Ports and rewrites**: JSON to directory tree, same scheme.
    - **Alternative takes**: same scheme, unusual approach.
    - **Inverse tools**: directory tree to JSON.
+   - **Tooling**: wrappers and tools built around existing implementations.
    - **Rebuttals**: projects arguing against `json2dir`.
 4. Use this format:
 
