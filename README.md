@@ -120,6 +120,27 @@ Implementations that have been requested but do not exist yet. Be the first:
 - [ ] Haskell
 - [x] Nix (pure evaluation, `builtins` only): [json2dir-nix](https://github.com/TheMaxMur/json2dir-nix), with a shell launcher for the writes
 - [ ] Assembly
+- [ ] JS
+- [ ] TS
+- [ ] Wasm (Bun)
+- [ ] jsonscript (Node)
+- [ ] Jsonnet (launcher approach)
+- [ ] JScript (Wine)
+- [ ] CMake
+- [ ] Lisp (Emacs Lisp)
+- [ ] LuaJIT
+- [ ] Zsh
+- [ ] Bat
+- [ ] Pwsh
+- [ ] Puppet
+- [ ] Ansible
+- [ ] LuaTeX (launcher approach)
+- [ ] Vim (launcher approach)
+- [ ] Java
+- [ ] Python
+- [ ] Ruby
+- [ ] PHP
+- [ ] nginx njs + WebDAV (self recursion with requests)
 - [x] A test harness that checks every implementation against the same fixtures: the [conformance suite](conformance/README.md)
 
 ## Contributing
