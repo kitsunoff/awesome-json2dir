@@ -10,13 +10,14 @@ Thank you for adding to the list.
    - **Ports and rewrites**: JSON to directory tree, same scheme.
    - **Alternative takes**: same scheme, unusual approach.
    - **Inverse tools**: directory tree to JSON.
+   - **Rebuttals**: projects arguing against `json2dir`.
 4. Use this format:
 
    ```markdown
    - [owner/repo](https://github.com/owner/repo) ![Language](https://img.shields.io/badge/-Language-COLOR?style=flat-square&logo=LOGO&logoColor=white) - Short description ending with a period.
    ```
 
-5. Add a row to the **At a glance** table and update the implementation count badge.
+5. Add a row to the **At a glance** table and update the project count badge.
 6. If your project fills an item in **Wanted**, tick it and link it.
 7. One project per pull request.
 
