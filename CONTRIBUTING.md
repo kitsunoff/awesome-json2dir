@@ -20,6 +20,15 @@ Thank you for adding to the list.
 5. Add a row to the **At a glance** table and update the project count badge.
 6. If your project fills an item in **Wanted**, tick it and link it.
 7. One project per pull request.
+8. Optional: mention the result of the [conformance suite](conformance/README.md) in the pull request.
+
+## Changing the specification
+
+Changes to [RFC J2D-1](spec/rfc-json2dir.md) need a matching change to the [conformance cases](conformance/cases), and the self-test must pass:
+
+```bash
+python3 -m unittest discover --start-directory conformance
+```
 
 ## Style
 

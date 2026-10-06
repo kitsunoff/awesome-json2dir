@@ -6,6 +6,8 @@
 
 *One JSON object in. One directory tree out. Many languages, many opinions.*
 
+**[Website](https://kitsunoff.github.io/awesome-json2dir/) · [RFC J2D-1](spec/rfc-json2dir.md) · [Conformance suite](conformance/README.md) · [Manifesto](MANIFESTO.md)**
+
 [![Projects](https://img.shields.io/badge/projects-9-blueviolet?style=flat-square)](#contents)
 [![Languages](https://img.shields.io/badge/languages-Rust%20%C2%B7%20Zig%20%C2%B7%20C%23%20%C2%B7%20Scheme%20%C2%B7%20Go%20%C2%B7%20MSBuild-orange?style=flat-square)](#ports-and-rewrites)
 [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey?style=flat-square)](LICENSE)
@@ -30,6 +32,7 @@
 ## Contents
 
 - [The format](#the-format)
+- [Specification and tests](#specification-and-tests)
 - [Reference implementation](#reference-implementation)
 - [Ports and rewrites](#ports-and-rewrites)
 - [Alternative takes](#alternative-takes)
@@ -41,7 +44,7 @@
 
 ## The format
 
-Every implementation in this list speaks the same conversion scheme, defined by the original `json2dir`:
+Every implementation in this list speaks the same conversion scheme, defined by the original `json2dir` and specified in [RFC J2D-1](spec/rfc-json2dir.md):
 
 | JSON value | Filesystem entry |
 | --- | --- |
@@ -50,7 +53,13 @@ Every implementation in this list speaks the same conversion scheme, defined by 
 | `["link", "target"]` | Symbolic link pointing to `target` |
 | `["script", "content"]` | File with the executable bit set |
 
-The root of the document must be an object. See the [upstream conversion scheme](https://github.com/alurm/json2dir#conversion-scheme) for the full rules.
+The root of the document must be an object. See [RFC J2D-1](spec/rfc-json2dir.md) for the full rules.
+
+## Specification and tests
+
+- [RFC J2D-1](spec/rfc-json2dir.md) - The format, the processing model and the security rules, written down with MUST and SHOULD.
+- [Conformance suite](conformance/README.md) - 68 language-agnostic test cases and a runner. Point it at any implementation: `python3 conformance/run.py /path/to/json2dir`.
+- [Manifesto](MANIFESTO.md) - Why a tree is a value, and why four shapes are enough.
 
 ## Reference implementation
 
@@ -103,7 +112,7 @@ Implementations that have been requested but do not exist yet. Be the first:
 
 ## Contributing
 
-Wrote your own `json2dir`? Open a pull request. Read the [contribution guidelines](CONTRIBUTING.md) first.
+Wrote your own `json2dir`? Run the [conformance suite](conformance/README.md) against it, then open a pull request. Read the [contribution guidelines](CONTRIBUTING.md) first.
 
 ---
 
