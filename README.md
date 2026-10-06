@@ -108,7 +108,7 @@ Implementations that have been requested but do not exist yet. Be the first:
 - [ ] Haskell
 - [ ] Nix (pure evaluation, `builtins` only)
 - [ ] Assembly
-- [ ] A test harness that checks every implementation against the same fixtures
+- [x] A test harness that checks every implementation against the same fixtures: the [conformance suite](conformance/README.md)
 
 ## Contributing
 
