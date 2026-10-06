@@ -5,6 +5,9 @@ It mirrors alurm/json2dir src/main.rs step by step: read stdin, parse the
 whole document, then walk members in byte order, unlinking whatever
 non-directory entry is in the way before creating each one.
 
+One deliberate difference: names that contain "/" are always rejected.
+The reference accepts trailing separators, which RFC J2D-1 leaves optional.
+
 It is not a recommended implementation: it exists so the conformance cases
 can be checked without building the reference.
 """

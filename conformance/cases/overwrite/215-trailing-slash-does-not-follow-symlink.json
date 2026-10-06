@@ -1,0 +1,26 @@
+{
+  "description": "A name with a trailing slash does not write through an existing symlink",
+  "section": "5.3",
+  "level": "overwrite",
+  "setup": {
+    "target": {},
+    "d": [
+      "link",
+      "target"
+    ]
+  },
+  "input": {
+    "d/": {
+      "new": "y"
+    }
+  },
+  "expect": {
+    "tree": {
+      "target": {},
+      "d": {
+        "new": "y"
+      }
+    },
+    "accept_error": true
+  }
+}

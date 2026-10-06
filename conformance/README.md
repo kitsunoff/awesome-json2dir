@@ -51,7 +51,7 @@ The exit status is 0 when every selected case passes and 1 otherwise.
     real: expected "secret", got "pwned"; victim: expected "pwned", got ["link", "real"]  [RFC §5.3]
 
 core       52/52 passed — conformant
-overwrite  14/15 passed — not conformant
+overwrite  15/16 passed — not conformant
 ```
 
 ## Conformance levels
