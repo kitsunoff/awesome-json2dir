@@ -1,0 +1,25 @@
+{
+  "description": "A link replaces an existing link",
+  "section": "5.2",
+  "level": "overwrite",
+  "setup": {
+    "l": [
+      "link",
+      "old"
+    ]
+  },
+  "input": {
+    "l": [
+      "link",
+      "new"
+    ]
+  },
+  "expect": {
+    "tree": {
+      "l": [
+        "link",
+        "new"
+      ]
+    }
+  }
+}

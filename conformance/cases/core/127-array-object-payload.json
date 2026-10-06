@@ -1,0 +1,14 @@
+{
+  "description": "An object array payload is rejected",
+  "section": "4.4",
+  "level": "core",
+  "input": {
+    "f": [
+      "link",
+      {}
+    ]
+  },
+  "expect": {
+    "error": true
+  }
+}

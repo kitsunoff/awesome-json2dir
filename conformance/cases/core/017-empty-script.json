@@ -1,0 +1,19 @@
+{
+  "description": "An empty script is an empty executable file",
+  "section": "4.4.2",
+  "level": "core",
+  "input": {
+    "s": [
+      "script",
+      ""
+    ]
+  },
+  "expect": {
+    "tree": {
+      "s": [
+        "script",
+        ""
+      ]
+    }
+  }
+}

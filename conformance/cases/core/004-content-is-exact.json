@@ -1,0 +1,17 @@
+{
+  "description": "File content is written exactly, with no newline added or removed",
+  "section": "4.3",
+  "level": "core",
+  "input": {
+    "a": "no newline",
+    "b": "two\nlines\n",
+    "c": "\n\n"
+  },
+  "expect": {
+    "tree": {
+      "a": "no newline",
+      "b": "two\nlines\n",
+      "c": "\n\n"
+    }
+  }
+}

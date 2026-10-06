@@ -1,0 +1,14 @@
+{
+  "description": "Array kinds are case-sensitive",
+  "section": "4.4",
+  "level": "core",
+  "input": {
+    "f": [
+      "Link",
+      "x"
+    ]
+  },
+  "expect": {
+    "error": true
+  }
+}

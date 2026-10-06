@@ -1,0 +1,11 @@
+{
+  "description": "An empty array is rejected",
+  "section": "4.4",
+  "level": "core",
+  "input": {
+    "f": []
+  },
+  "expect": {
+    "error": true
+  }
+}

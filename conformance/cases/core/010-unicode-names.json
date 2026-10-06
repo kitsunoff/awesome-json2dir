@@ -1,0 +1,17 @@
+{
+  "description": "Non-ASCII member names become UTF-8 file names",
+  "section": "4.2",
+  "level": "core",
+  "input": {
+    "каталог": {
+      "файл 🦀": "x"
+    }
+  },
+  "expect": {
+    "tree": {
+      "каталог": {
+        "файл 🦀": "x"
+      }
+    }
+  }
+}

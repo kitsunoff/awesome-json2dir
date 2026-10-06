@@ -1,0 +1,11 @@
+{
+  "description": "JSON escapes in content are decoded before writing",
+  "section": "4.3",
+  "level": "core",
+  "input_text": "{\"f\": \"tab\\there \\u00e9 \\ud83e\\udd80 \\\"q\\\" \\\\\"}",
+  "expect": {
+    "tree": {
+      "f": "tab\there é 🦀 \"q\" \\"
+    }
+  }
+}

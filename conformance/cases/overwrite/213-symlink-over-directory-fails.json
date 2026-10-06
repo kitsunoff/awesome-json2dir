@@ -1,0 +1,17 @@
+{
+  "description": "A link where a directory exists is an error",
+  "section": "5.4",
+  "level": "overwrite",
+  "setup": {
+    "d": {}
+  },
+  "input": {
+    "d": [
+      "link",
+      "t"
+    ]
+  },
+  "expect": {
+    "error": true
+  }
+}

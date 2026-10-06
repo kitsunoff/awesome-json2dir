@@ -1,0 +1,14 @@
+{
+  "description": "An unknown array kind is rejected",
+  "section": "4.4",
+  "level": "core",
+  "input": {
+    "f": [
+      "linksym",
+      "x"
+    ]
+  },
+  "expect": {
+    "error": true
+  }
+}

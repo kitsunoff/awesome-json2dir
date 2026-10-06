@@ -1,0 +1,9 @@
+{
+  "description": "Empty input is rejected",
+  "section": "3",
+  "level": "core",
+  "input_text": "",
+  "expect": {
+    "error": true
+  }
+}

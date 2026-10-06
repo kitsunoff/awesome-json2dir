@@ -1,0 +1,13 @@
+{
+  "description": "The name .. is rejected inside a subdirectory too",
+  "section": "4.2.1",
+  "level": "core",
+  "input": {
+    "d": {
+      "..": "x"
+    }
+  },
+  "expect": {
+    "error": true
+  }
+}

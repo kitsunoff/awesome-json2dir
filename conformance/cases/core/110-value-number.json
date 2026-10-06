@@ -1,0 +1,11 @@
+{
+  "description": "A number value is rejected",
+  "section": "4.5",
+  "level": "core",
+  "input": {
+    "f": 1
+  },
+  "expect": {
+    "error": true
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "description": "A name with two components is rejected",
+  "section": "4.2.1",
+  "level": "core",
+  "input": {
+    "a/b": "x"
+  },
+  "expect": {
+    "error": true
+  }
+}

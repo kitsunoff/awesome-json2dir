@@ -1,0 +1,19 @@
+{
+  "description": "Absolute symlink targets are stored verbatim",
+  "section": "4.4.1",
+  "level": "core",
+  "input": {
+    "root": [
+      "link",
+      "/"
+    ]
+  },
+  "expect": {
+    "tree": {
+      "root": [
+        "link",
+        "/"
+      ]
+    }
+  }
+}

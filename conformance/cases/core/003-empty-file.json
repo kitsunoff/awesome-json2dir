@@ -1,0 +1,13 @@
+{
+  "description": "An empty string becomes an empty file",
+  "section": "4.3",
+  "level": "core",
+  "input": {
+    "empty": ""
+  },
+  "expect": {
+    "tree": {
+      "empty": ""
+    }
+  }
+}

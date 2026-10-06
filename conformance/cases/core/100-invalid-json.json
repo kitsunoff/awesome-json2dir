@@ -1,0 +1,9 @@
+{
+  "description": "Input that is not JSON is rejected",
+  "section": "3",
+  "level": "core",
+  "input_text": "f",
+  "expect": {
+    "error": true
+  }
+}

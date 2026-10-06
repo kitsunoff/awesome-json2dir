@@ -1,0 +1,11 @@
+{
+  "description": "A name starting with ./ is rejected",
+  "section": "4.2.1",
+  "level": "core",
+  "input": {
+    "./a": "x"
+  },
+  "expect": {
+    "error": true
+  }
+}

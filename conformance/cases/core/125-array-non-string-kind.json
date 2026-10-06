@@ -1,0 +1,14 @@
+{
+  "description": "A non-string array kind is rejected",
+  "section": "4.4",
+  "level": "core",
+  "input": {
+    "f": [
+      1,
+      "x"
+    ]
+  },
+  "expect": {
+    "error": true
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "description": "A non-string array payload is rejected",
+  "section": "4.4",
+  "level": "core",
+  "input": {
+    "f": [
+      "script",
+      1
+    ]
+  },
+  "expect": {
+    "error": true
+  }
+}

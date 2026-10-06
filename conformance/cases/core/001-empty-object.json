@@ -1,0 +1,9 @@
+{
+  "description": "An empty object produces nothing",
+  "section": "4.1",
+  "level": "core",
+  "input": {},
+  "expect": {
+    "tree": {}
+  }
+}

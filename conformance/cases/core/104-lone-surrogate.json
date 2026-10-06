@@ -1,0 +1,9 @@
+{
+  "description": "Lone surrogate escapes are rejected",
+  "section": "3",
+  "level": "core",
+  "input_text": "{\"f\": \"\\ud800\"}",
+  "expect": {
+    "error": true
+  }
+}

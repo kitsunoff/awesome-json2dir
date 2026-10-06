@@ -1,0 +1,26 @@
+{
+  "description": "An object merges into an existing directory",
+  "section": "5.1",
+  "level": "overwrite",
+  "setup": {
+    "d": {
+      "keep": "x",
+      "f": "old"
+    }
+  },
+  "input": {
+    "d": {
+      "new": "y",
+      "f": "new"
+    }
+  },
+  "expect": {
+    "tree": {
+      "d": {
+        "keep": "x",
+        "new": "y",
+        "f": "new"
+      }
+    }
+  }
+}

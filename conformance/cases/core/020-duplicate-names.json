@@ -1,0 +1,12 @@
+{
+  "description": "Duplicate names: the last occurrence wins, or the document is rejected",
+  "section": "4.2",
+  "level": "core",
+  "input_text": "{\"a\": \"first\", \"a\": \"second\"}",
+  "expect": {
+    "tree": {
+      "a": "second"
+    },
+    "accept_error": true
+  }
+}

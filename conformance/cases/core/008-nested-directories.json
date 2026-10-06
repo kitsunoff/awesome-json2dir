@@ -1,0 +1,21 @@
+{
+  "description": "Nested objects become nested directories",
+  "section": "4.2",
+  "level": "core",
+  "input": {
+    "a": {
+      "b": {
+        "c": {}
+      }
+    }
+  },
+  "expect": {
+    "tree": {
+      "a": {
+        "b": {
+          "c": {}
+        }
+      }
+    }
+  }
+}

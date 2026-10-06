@@ -1,0 +1,15 @@
+{
+  "description": "An array with three elements is rejected",
+  "section": "4.4",
+  "level": "core",
+  "input": {
+    "f": [
+      "link",
+      "a",
+      "b"
+    ]
+  },
+  "expect": {
+    "error": true
+  }
+}

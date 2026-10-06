@@ -1,0 +1,13 @@
+{
+  "description": "Non-ASCII content is written as UTF-8",
+  "section": "4.3",
+  "level": "core",
+  "input": {
+    "f": "Привет, 世界 🦀"
+  },
+  "expect": {
+    "tree": {
+      "f": "Привет, 世界 🦀"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "description": "The example from the reference README",
+  "section": "4",
+  "level": "core",
+  "input": {
+    "greeting": "Hello, world!",
+    "dir": {
+      "subfile": "Content.\n",
+      "subdir": {}
+    },
+    "symlink": [
+      "link",
+      "target path"
+    ],
+    "script": [
+      "script",
+      "#!/bin/sh\necho Howdy!"
+    ]
+  },
+  "expect": {
+    "tree": {
+      "greeting": "Hello, world!",
+      "dir": {
+        "subfile": "Content.\n",
+        "subdir": {}
+      },
+      "symlink": [
+        "link",
+        "target path"
+      ],
+      "script": [
+        "script",
+        "#!/bin/sh\necho Howdy!"
+      ]
+    }
+  }
+}

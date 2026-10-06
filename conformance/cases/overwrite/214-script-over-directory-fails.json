@@ -1,0 +1,17 @@
+{
+  "description": "A script where a directory exists is an error",
+  "section": "5.4",
+  "level": "overwrite",
+  "setup": {
+    "d": {}
+  },
+  "input": {
+    "d": [
+      "script",
+      "x"
+    ]
+  },
+  "expect": {
+    "error": true
+  }
+}

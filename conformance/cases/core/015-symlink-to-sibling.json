@@ -1,0 +1,21 @@
+{
+  "description": "A symlink to a sibling is a link, not a copy",
+  "section": "4.4.1",
+  "level": "core",
+  "input": {
+    "t": "x",
+    "l": [
+      "link",
+      "t"
+    ]
+  },
+  "expect": {
+    "tree": {
+      "t": "x",
+      "l": [
+        "link",
+        "t"
+      ]
+    }
+  }
+}

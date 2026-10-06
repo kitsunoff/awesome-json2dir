@@ -1,0 +1,16 @@
+{
+  "description": "Replacing a file leaves no trailing old content",
+  "section": "5.2",
+  "level": "overwrite",
+  "setup": {
+    "f": "old content that is long"
+  },
+  "input": {
+    "f": "new"
+  },
+  "expect": {
+    "tree": {
+      "f": "new"
+    }
+  }
+}

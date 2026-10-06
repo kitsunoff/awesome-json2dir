@@ -1,0 +1,9 @@
+{
+  "description": "Data after the JSON value is rejected",
+  "section": "3",
+  "level": "core",
+  "input_text": "{} {}",
+  "expect": {
+    "error": true
+  }
+}

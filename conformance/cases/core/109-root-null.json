@@ -1,0 +1,9 @@
+{
+  "description": "A root null is rejected",
+  "section": "4.1",
+  "level": "core",
+  "input": null,
+  "expect": {
+    "error": true
+  }
+}

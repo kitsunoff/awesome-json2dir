@@ -1,0 +1,13 @@
+{
+  "description": "NUL characters in content are written as is",
+  "section": "4.3",
+  "level": "core",
+  "input": {
+    "f": "a\u0000b"
+  },
+  "expect": {
+    "tree": {
+      "f": "a\u0000b"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "description": "Non-standard literals are rejected",
+  "section": "3",
+  "level": "core",
+  "input_text": "{\"f\": NaN}",
+  "expect": {
+    "error": true
+  }
+}

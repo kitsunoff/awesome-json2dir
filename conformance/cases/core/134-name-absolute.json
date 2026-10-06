@@ -1,0 +1,11 @@
+{
+  "description": "An absolute path as a name is rejected",
+  "section": "4.2.1",
+  "level": "core",
+  "input": {
+    "/nonexistent-json2dir-conformance/f": "x"
+  },
+  "expect": {
+    "error": true
+  }
+}

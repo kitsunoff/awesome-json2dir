@@ -1,0 +1,11 @@
+{
+  "description": "The name . is rejected",
+  "section": "4.2.1",
+  "level": "core",
+  "input": {
+    ".": "x"
+  },
+  "expect": {
+    "error": true
+  }
+}

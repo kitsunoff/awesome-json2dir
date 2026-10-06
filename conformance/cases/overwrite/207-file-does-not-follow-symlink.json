@@ -1,0 +1,21 @@
+{
+  "description": "Writing a file over a symlink replaces the link and leaves its target intact",
+  "section": "5.3",
+  "level": "overwrite",
+  "setup": {
+    "real": "secret",
+    "victim": [
+      "link",
+      "real"
+    ]
+  },
+  "input": {
+    "victim": "pwned"
+  },
+  "expect": {
+    "tree": {
+      "real": "secret",
+      "victim": "pwned"
+    }
+  }
+}

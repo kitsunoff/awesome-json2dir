@@ -1,0 +1,13 @@
+{
+  "description": "An invalid value inside a subdirectory is rejected",
+  "section": "4.5",
+  "level": "core",
+  "input": {
+    "d": {
+      "f": false
+    }
+  },
+  "expect": {
+    "error": true
+  }
+}

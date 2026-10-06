@@ -1,0 +1,19 @@
+{
+  "description": "Targets outside the tree are stored verbatim and not followed",
+  "section": "4.4.1",
+  "level": "core",
+  "input": {
+    "up": [
+      "link",
+      "../../outside"
+    ]
+  },
+  "expect": {
+    "tree": {
+      "up": [
+        "link",
+        "../../outside"
+      ]
+    }
+  }
+}

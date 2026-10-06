@@ -1,0 +1,27 @@
+{
+  "description": "Writing a script over a symlink leaves its target intact",
+  "section": "5.3",
+  "level": "overwrite",
+  "setup": {
+    "real": "secret",
+    "victim": [
+      "link",
+      "real"
+    ]
+  },
+  "input": {
+    "victim": [
+      "script",
+      "pwned"
+    ]
+  },
+  "expect": {
+    "tree": {
+      "real": "secret",
+      "victim": [
+        "script",
+        "pwned"
+      ]
+    }
+  }
+}

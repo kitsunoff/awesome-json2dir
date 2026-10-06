@@ -1,0 +1,13 @@
+{
+  "description": "A string becomes a regular file",
+  "section": "4.3",
+  "level": "core",
+  "input": {
+    "hello": "Hello, world"
+  },
+  "expect": {
+    "tree": {
+      "hello": "Hello, world"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "description": "[\"script\", content] becomes an executable file",
+  "section": "4.4.2",
+  "level": "core",
+  "input": {
+    "s": [
+      "script",
+      "#!/bin/sh\necho Howdy!"
+    ]
+  },
+  "expect": {
+    "tree": {
+      "s": [
+        "script",
+        "#!/bin/sh\necho Howdy!"
+      ]
+    }
+  }
+}

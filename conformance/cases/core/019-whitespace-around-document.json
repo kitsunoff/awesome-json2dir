@@ -1,0 +1,11 @@
+{
+  "description": "Insignificant whitespace around the document is allowed",
+  "section": "3",
+  "level": "core",
+  "input_text": " \n\t{\"f\": \"x\"}\r\n ",
+  "expect": {
+    "tree": {
+      "f": "x"
+    }
+  }
+}

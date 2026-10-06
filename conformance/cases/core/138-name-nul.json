@@ -1,0 +1,11 @@
+{
+  "description": "A name containing NUL is rejected",
+  "section": "4.2.1",
+  "level": "core",
+  "input": {
+    "a\u0000b": "x"
+  },
+  "expect": {
+    "error": true
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "description": "[\"link\", target] becomes a symbolic link",
+  "section": "4.4.1",
+  "level": "core",
+  "input": {
+    "l": [
+      "link",
+      "target path"
+    ]
+  },
+  "expect": {
+    "tree": {
+      "l": [
+        "link",
+        "target path"
+      ]
+    }
+  }
+}

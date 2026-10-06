@@ -1,0 +1,16 @@
+{
+  "description": "A string where a directory exists is an error",
+  "section": "5.4",
+  "level": "overwrite",
+  "setup": {
+    "d": {
+      "keep": "x"
+    }
+  },
+  "input": {
+    "d": "x"
+  },
+  "expect": {
+    "error": true
+  }
+}

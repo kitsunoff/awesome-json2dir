@@ -1,0 +1,31 @@
+{
+  "description": "Entries not named in the document are left alone",
+  "section": "5.1",
+  "level": "overwrite",
+  "setup": {
+    "other": "x",
+    "dir": {
+      "a": "b"
+    },
+    "l": [
+      "link",
+      "nowhere"
+    ]
+  },
+  "input": {
+    "f": "y"
+  },
+  "expect": {
+    "tree": {
+      "other": "x",
+      "dir": {
+        "a": "b"
+      },
+      "l": [
+        "link",
+        "nowhere"
+      ],
+      "f": "y"
+    }
+  }
+}

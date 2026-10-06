@@ -1,0 +1,11 @@
+{
+  "description": "A null value is rejected",
+  "section": "4.5",
+  "level": "core",
+  "input": {
+    "f": null
+  },
+  "expect": {
+    "error": true
+  }
+}

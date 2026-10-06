@@ -1,0 +1,29 @@
+{
+  "description": "An object over a symlink to a directory replaces the link",
+  "section": "5.3",
+  "level": "overwrite",
+  "setup": {
+    "target": {
+      "keep": "x"
+    },
+    "d": [
+      "link",
+      "target"
+    ]
+  },
+  "input": {
+    "d": {
+      "new": "y"
+    }
+  },
+  "expect": {
+    "tree": {
+      "target": {
+        "keep": "x"
+      },
+      "d": {
+        "new": "y"
+      }
+    }
+  }
+}

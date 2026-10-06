@@ -1,0 +1,23 @@
+{
+  "description": "Names with spaces, leading dots and backslashes are single components",
+  "section": "4.2",
+  "level": "core",
+  "input": {
+    " spaced name ": "1",
+    ".hidden": "2",
+    "...": "3",
+    "a.b": "4",
+    "back\\slash": "5",
+    "-dash": "6"
+  },
+  "expect": {
+    "tree": {
+      " spaced name ": "1",
+      ".hidden": "2",
+      "...": "3",
+      "a.b": "4",
+      "back\\slash": "5",
+      "-dash": "6"
+    }
+  }
+}

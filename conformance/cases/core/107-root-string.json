@@ -1,0 +1,9 @@
+{
+  "description": "A root string is rejected",
+  "section": "4.1",
+  "level": "core",
+  "input": "x",
+  "expect": {
+    "error": true
+  }
+}

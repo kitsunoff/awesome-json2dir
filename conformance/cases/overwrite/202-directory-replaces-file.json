@@ -1,0 +1,20 @@
+{
+  "description": "An object replaces an existing file",
+  "section": "5.2",
+  "level": "overwrite",
+  "setup": {
+    "f": "old"
+  },
+  "input": {
+    "f": {
+      "x": "y"
+    }
+  },
+  "expect": {
+    "tree": {
+      "f": {
+        "x": "y"
+      }
+    }
+  }
+}

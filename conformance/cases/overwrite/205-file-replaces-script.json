@@ -1,0 +1,19 @@
+{
+  "description": "A string replacing a script yields a non-executable file",
+  "section": "5.2",
+  "level": "overwrite",
+  "setup": {
+    "f": [
+      "script",
+      "old"
+    ]
+  },
+  "input": {
+    "f": "new"
+  },
+  "expect": {
+    "tree": {
+      "f": "new"
+    }
+  }
+}

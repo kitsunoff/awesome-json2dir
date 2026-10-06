@@ -1,0 +1,11 @@
+{
+  "description": "A boolean value is rejected",
+  "section": "4.5",
+  "level": "core",
+  "input": {
+    "f": true
+  },
+  "expect": {
+    "error": true
+  }
+}

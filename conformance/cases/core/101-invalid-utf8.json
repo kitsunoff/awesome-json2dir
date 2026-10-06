@@ -1,0 +1,9 @@
+{
+  "description": "Input that is not UTF-8 is rejected",
+  "section": "3",
+  "level": "core",
+  "input_base64": "eyJmIjogIv8ifQ==",
+  "expect": {
+    "error": true
+  }
+}
