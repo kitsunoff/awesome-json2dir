@@ -8,8 +8,8 @@
 
 **[Website](https://kitsunoff.github.io/awesome-json2dir/) · [RFC J2D-1](spec/rfc-json2dir.md) · [Conformance suite](conformance/README.md) · [Manifesto](MANIFESTO.md)**
 
-[![Projects](https://img.shields.io/badge/projects-16-blueviolet?style=flat-square)](#contents)
-[![Languages](https://img.shields.io/badge/languages-Rust%20%C2%B7%20Zig%20%C2%B7%20C%23%20%C2%B7%20Scheme%20%C2%B7%20Go%20%C2%B7%20MSBuild%20%C2%B7%20Nix%20%C2%B7%20Lean%20%C2%B7%20LLVM%20IR%20%C2%B7%20F%2A%20%C2%B7%20Shell-orange?style=flat-square)](#ports-and-rewrites)
+[![Projects](https://img.shields.io/badge/projects-20-blueviolet?style=flat-square)](#contents)
+[![Languages](https://img.shields.io/badge/languages-Rust%20%C2%B7%20Zig%20%C2%B7%20C%23%20%C2%B7%20Scheme%20%C2%B7%20Go%20%C2%B7%20MSBuild%20%C2%B7%20Nix%20%C2%B7%20Lean%20%C2%B7%20LLVM%20IR%20%C2%B7%20F%2A%20%C2%B7%20Agda%20%C2%B7%20ATS%20%C2%B7%20Brainfuck%20%C2%B7%20Shell-orange?style=flat-square)](#ports-and-rewrites)
 [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey?style=flat-square)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](CONTRIBUTING.md)
 
@@ -76,12 +76,16 @@ The root of the document must be an object. See [RFC J2D-1](spec/rfc-json2dir.md
 - [tsalkenov/json2dir-lean](https://github.com/tsalkenov/json2dir-lean) ![Lean 4](https://img.shields.io/badge/-Lean%204-000000?style=flat-square) - Lean 4 port whose key parsing and value classification are pure functions with proofs: every accepted key is one nonempty relative component without `.` or `..`, and each JSON form maps to the intended operation. Filesystem effects are not covered by the proofs.
 - [TheMaxMur/json2dir-llvm-IR](https://github.com/TheMaxMur/json2dir-llvm-IR) ![LLVM IR](https://img.shields.io/badge/-LLVM%20IR-262D3A?style=flat-square&logo=llvm&logoColor=white) - Handwritten textual LLVM IR: JSON parser, UTF-8 handling, key sorting and tree creation, linked only against libc. Differentially tested against the Rust original on 2460 input and directory-state combinations.
 - [TheMaxMur/json2dir-F-](https://github.com/TheMaxMur/json2dir-F-) ![F\*](https://img.shields.io/badge/-F%2A-1B4F72?style=flat-square) - The whole CLI written in F\* and extracted to OCaml: JSON parser, UTF-8 handling, path checks and tree traversal. Ports every theorem from json2dir-lean's `Spec.lean` as F\* lemmas checked with Z3, without `admit`. Differentially tested against the Rust original.
+- [TheMaxMur/json2dir-agda](https://github.com/TheMaxMur/json2dir-agda) ![Agda](https://img.shields.io/badge/-Agda-5E5086?style=flat-square) - JSON parser, name checks, duplicate handling, ordering and traversal written in Agda and compiled through the GHC backend; only small `COMPILE GHC` bindings for IO are handwritten. Pure modules use `--safe`, and the name checker and classifier carry proofs that follow json2dir-lean's specification.
+- [TheMaxMur/json2dir-ats](https://github.com/TheMaxMur/json2dir-ats) ![ATS](https://img.shields.io/badge/-ATS2-4A4A4A?style=flat-square) - ATS2 port with the JSON parser, Unicode decoder, key sorting, path validation and tree writer in one `main.dats`. Owned trees and buffers use linear types and are freed explicitly, with no garbage collector. Documents its compatibility with the Rust original rule by rule.
 
 ## Alternative takes
 
 - [lcensies/json2llm](https://github.com/lcensies/json2llm) ![Go](https://img.shields.io/badge/-Go-00ADD8?style=flat-square&logo=go&logoColor=white) - Same JSON in, same tree out, except a language model does the compiling. Go validates the model's plan and performs the writes. Backends: OpenAI-compatible API, `claude`, `codex`, `opencode`, `pi`, or `local` for the cowards.
 - [71g3pf4c3/kube-operator2dir](https://github.com/71g3pf4c3/kube-operator2dir) ![Go](https://img.shields.io/badge/-Go-00ADD8?style=flat-square&logo=go&logoColor=white) ![Kubernetes](https://img.shields.io/badge/-Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white) - The scheme as a Kubernetes operator: a cluster-scoped `DirTree` resource holds the tree, and a DaemonSet agent materializes it on nodes matched by `nodeSelector`. Replaces instead of merging, reverts external drift on a resync and prunes the tree when the resource is deleted.
 - [71g3pf4c3/zakon2dir](https://github.com/71g3pf4c3/zakon2dir) ![DOCX only](https://img.shields.io/badge/-DOCX%20only-lightgrey?style=flat-square) - The scheme as a parody Russian federal constitutional law, in a `.docx`: objects, strings, links and scripts as articles, plus the right to reverse conversion and `dir2json --check` exit codes as legal facts. Has no legal force.
+- [71g3pf4c3/brainfuck2dir](https://github.com/71g3pf4c3/brainfuck2dir) ![Brainfuck](https://img.shields.io/badge/-Brainfuck-2F2F2F?style=flat-square) - The scheme as an output format for brainfuck: runs of a command become files and loops become directories. The converter itself is about 94 KB of brainfuck, generated by a macro assembler and run by a Zig VM.
+- [71g3pf4c3/json2philosophy](https://github.com/71g3pf4c3/json2philosophy) ![PDF](https://img.shields.io/badge/-PDF%20book-lightgrey?style=flat-square) - *Being and JSON*, a 51-page book in Russian on the ontology of conversion: Plato's two worlds as eidos and inode, Heidegger's Dasein of the user, and `--check` exit code 3 as the call of conscience. Built from HTML with WeasyPrint.
 
 ## Inverse tools
 
@@ -111,9 +115,13 @@ Projects that exist to explain why `json2dir` should not.
 | [json2dir-lean](https://github.com/tsalkenov/json2dir-lean) | Lean 4 | JSON → dir | WTFPL |
 | [json2dir-llvm-IR](https://github.com/TheMaxMur/json2dir-llvm-IR) | LLVM IR | JSON → dir | ISC |
 | [json2dir-F-](https://github.com/TheMaxMur/json2dir-F-) | F\* | JSON → dir | ISC |
+| [json2dir-agda](https://github.com/TheMaxMur/json2dir-agda) | Agda | JSON → dir | ISC |
+| [json2dir-ats](https://github.com/TheMaxMur/json2dir-ats) | ATS2 | JSON → dir | ISC |
 | [json2llm](https://github.com/lcensies/json2llm) | Go + LLM | JSON → LLM → dir | None specified |
 | [kube-operator2dir](https://github.com/71g3pf4c3/kube-operator2dir) | Go + Kubernetes | CR → node dirs | Apache-2.0 (per README) |
 | [zakon2dir](https://github.com/71g3pf4c3/zakon2dir) | Russian legalese | JSON ⇄ dir, by law | GPL-3.0 |
+| [brainfuck2dir](https://github.com/71g3pf4c3/brainfuck2dir) | Brainfuck + Zig | brainfuck → JSON → dir | GPL-3.0 |
+| [json2philosophy](https://github.com/71g3pf4c3/json2philosophy) | Russian prose | JSON → Being | GPL-3.0 |
 | [json2slop](https://github.com/lcensies/json2slop) | Shell + Docker | JSON → any backend → dir | None specified |
 | [dir2json](https://github.com/71g3pf4c3/dir2json) | Rust | dir → JSON | GPL-3.0 |
 | [json2json](https://github.com/71g3pf4c3/json2json) | Rust | JSON → JSON | GPL-3.0 |
