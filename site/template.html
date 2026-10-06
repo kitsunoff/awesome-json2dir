@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>$pagetitle$</title>
+  <meta name="description" content="$description$">
+  <meta property="og:title" content="$pagetitle$">
+  <meta property="og:description" content="$description$">
+  <meta name="theme-color" content="#0f1117" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23f59e0b'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='16' font-weight='700' text-anchor='middle' fill='%230f1117'%3E%7B%7D%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=JetBrains+Mono:wght@400;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-$page$">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="bar">
+      <a class="brand" href="index.html"><span class="brace">{</span>json2dir<span class="brace">}</span></a>
+      <nav aria-label="Main">
+        <a href="index.html"$if(nav_home)$ aria-current="page"$endif$>Awesome list</a>
+        <a href="rfc.html"$if(nav_rfc)$ aria-current="page"$endif$>RFC</a>
+        <a href="conformance.html"$if(nav_conformance)$ aria-current="page"$endif$>Conformance</a>
+        <a href="manifesto.html"$if(nav_manifesto)$ aria-current="page"$endif$>Manifesto</a>
+        <a class="external" href="https://github.com/kitsunoff/awesome-json2dir">GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="content">
+$body$
+  </main>
+  <footer class="site-footer">
+    <p>
+      Public domain under <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>
+      · <a href="https://github.com/kitsunoff/awesome-json2dir/blob/main/$source$">Edit this page on GitHub</a>
+      · <a href="contributing.html">Contribute</a>
+    </p>
+  </footer>
+</body>
+</html>
