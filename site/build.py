@@ -59,6 +59,10 @@ def main() -> int:
     shutil.copyfile(SITE / "style.css", out / "style.css")
     shutil.copyfile(SITE / "results.js", out / "results.js")
     shutil.copyfile(ROOT / "results" / "results.json", out / "results.json")
+    for name in ("benchmarks.js", "benchmarks.css"):
+        shutil.copyfile(SITE / name, out / name)
+    for name in ("benchmarks.json", "benchmark-samples.json"):
+        shutil.copyfile(ROOT / "results" / name, out / name)
     (out / ".nojekyll").touch()
     return 0
 
