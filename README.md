@@ -9,7 +9,12 @@
 **[Website](https://kitsunoff.github.io/awesome-json2dir/) · [RFC J2D-1](spec/rfc-json2dir.md) · [Conformance suite](conformance/README.md) · [Manifesto](MANIFESTO.md)**
 
 [![Projects](https://img.shields.io/badge/projects-167-blueviolet?style=flat-square)](#contents)
-[![Languages](https://img.shields.io/badge/languages-Rust%20%C2%B7%20Zig%20%C2%B7%20C%23%20%C2%B7%20Scheme%20%C2%B7%20Go%20%C2%B7%20MSBuild%20%C2%B7%20Nix%20%C2%B7%20Lean%20%C2%B7%20LLVM%20IR%20%C2%B7%20F%2A%20%C2%B7%20Agda%20%C2%B7%20ATS%20%C2%B7%20Brainfuck%20%C2%B7%20bimbo--lang%20%C2%B7%20Haskell%20%C2%B7%20Typst%20%C2%B7%20Python%20%C2%B7%20Shell%20%C2%B7%20%2B%20141%20via%20json2dir--guru-orange?style=flat-square)](#ports-and-rewrites)
+[![Languages](https://img.shields.io/badge/languages-Rust%20%C2%B7%20Zig%20%C2%B7%20C%23%20%C2%B7%20Scheme%20%C2%B7%20Go%20%C2%B7%20MSBuild%20%C2%B7%20Nix%20%C2%B7%20Lean%20%C2%B7%20LLVM%20IR%20%C2%B7%20F%2A%20%C2%B7%20Agda%20%C2%B7%20ATS%20%C2%B7%20Brainfuck%20%C2%B7%20bimbo--lang%20%C2%B7%20Haskell%20%C2%B7%20Typst%20%C2%B7%20Python%20%C2%B7%20Shell%20%C2%B7%20Ada%20%C2%B7%20Aheui%20%C2%B7%20ALGOL%2060%20%C2%B7%20ALGOL%2068%20%C2%B7%20Ansible%20%C2%B7%20APL%20%C2%B7%20ArnoldC%20%C2%B7%20x86--64%20assembly%20%C2%B7%20AWK%20%C2%B7%20Bash%20%C2%B7%20FreeBASIC%20%C2%B7%20Batch-orange?style=flat-square)](#ports-and-rewrites)
+[![Languages](https://img.shields.io/badge/-BCPL%20%C2%B7%20Befunge--98%20%C2%B7%20BQN%20%C2%B7%20Braincopter%20%C2%B7%20Brainloller%20%C2%B7%20C17%20%C2%B7%20C23%20%C2%B7%20C89%20%C2%B7%20Cforall%20%C2%B7%20Checked%20C%20%C2%B7%20Chef%20%C2%B7%20Chez%20Scheme%20%C2%B7%20CIL%20%C2%B7%20Cilk%20%C2%B7%20Clojure%20%C2%B7%20CMake%20%C2%B7%20COBOL%20%C2%B7%20Common%20Lisp%20%C2%B7%20C%20%28CompCert%29%20%C2%B7%20COW%20%C2%B7%20C%2B%2B%20%C2%B7%20Crystal%20%C2%B7%20D%20%C2%B7%20Dafny%20%C2%B7%20Dart%20%C2%B7%20Eiffel%20%C2%B7%20Emacs%20Lisp%20%C2%B7%20Elixir-orange?style=flat-square)](#ports-and-rewrites)
+[![Languages](https://img.shields.io/badge/-Emojicode%20%C2%B7%20Erlang%20%C2%B7%20FALSE%20%C2%B7%20Fennel%20%C2%B7%20%3E%3C%3E%20%28Fish%29%20%C2%B7%20Forth%20%C2%B7%20Fortran%20%C2%B7%20Fractran%20%C2%B7%20Free%20Pascal%20%C2%B7%20F%23%20%C2%B7%20Gleam%20%C2%B7%20GNU%20C%20%C2%B7%20Groovy%20%C2%B7%20Hare%20%C2%B7%20Hexagony%20%C2%B7%20HolyC%20%C2%B7%20Idris%202%20%C2%B7%20INTERCAL%20%C2%B7%20J%20%C2%B7%20Janet%20%C2%B7%20Java%20%C2%B7%20jq%20%C2%B7%20JavaScript%20%C2%B7%20JScript%20%C2%B7%20Jsonnet%20%C2%B7%20JSONScript%20%C2%B7%20Julia%20%C2%B7%20K-orange?style=flat-square)](#ports-and-rewrites)
+[![Languages](https://img.shields.io/badge/-Koka%20%C2%B7%20Kotlin%20%C2%B7%20K%26R%20C%20%C2%B7%20ksh93%20%C2%B7%20Logo%20%C2%B7%20LOLCODE%20%C2%B7%20Lua%20%C2%B7%20LuaJIT%20%C2%B7%20LuaTeX%20%C2%B7%20Malbolge%20Unshackled%20%C2%B7%20Mercury%20%C2%B7%20Modula--2%20%C2%B7%20Mojo%20%C2%B7%20Neovim%20Lua%20%C2%B7%20Nim%20%C2%B7%20nginx%20njs%20%C2%B7%20Objective--C%20%C2%B7%20OCaml%20%C2%B7%20MATLAB%2FOctave%20%C2%B7%20Odin%20%C2%B7%20Ook%21%20%C2%B7%20Perl%20%C2%B7%20PHP%20%C2%B7%20Piet%20%C2%B7%20Pikachu%20%C2%B7%20PL%2FI%20%C2%B7%20Pony-orange?style=flat-square)](#ports-and-rewrites)
+[![Languages](https://img.shields.io/badge/-Prolog%20%C2%B7%20Puppet%20%C2%B7%20PureScript%20%C2%B7%20PowerShell%20%C2%B7%20R%20%C2%B7%20Racket%20%C2%B7%20Raku%20%C2%B7%20REXX%20%C2%B7%20Roc%20%C2%B7%20Rockstar%20%C2%B7%20Rocq%20%C2%B7%20Ruby%20%C2%B7%20Scala%20%C2%B7%20sed%20%C2%B7%20Shakespeare%20%C2%B7%20Smalltalk%20%C2%B7%20Standard%20ML%20%C2%B7%20SNOBOL4%20%C2%B7%20SQL%20%C2%B7%20Subleq%20%C2%B7%20Swift%20%C2%B7%20SystemVerilog%20%C2%B7%20Taxi%20%C2%B7%20Tcl%20%C2%B7%20Thue%20%C2%B7%20TypeScript%20%C2%B7%20Unicon%20%C2%B7%20Unlambda-orange?style=flat-square)](#ports-and-rewrites)
+[![Languages](https://img.shields.io/badge/-V%20%C2%B7%20Vala%20%C2%B7%20VB.NET%20%C2%B7%20VBScript%20%C2%B7%20Velato%20%C2%B7%20VHDL%20%C2%B7%20Vim%20script%20%C2%B7%20WebAssembly%20%C2%B7%20Whitespace%20%C2%B7%20WhyML%20%C2%B7%20XSLT%20%C2%B7%20zsh-orange?style=flat-square)](#ports-and-rewrites)
 [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey?style=flat-square)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](CONTRIBUTING.md)
 
@@ -36,7 +41,6 @@
 - [Reference implementation](#reference-implementation)
 - [Ports and rewrites](#ports-and-rewrites)
 - [Alternative takes](#alternative-takes)
-- [json2dir-guru: 141 languages](#json2dir-guru-141-languages)
 - [Inverse tools](#inverse-tools)
 - [Tooling](#tooling)
 - [Rebuttals](#rebuttals)
@@ -82,6 +86,147 @@ The root of the document must be an object. See [RFC J2D-1](spec/rfc-json2dir.md
 - [TheMaxMur/json2dir-bimbo](https://github.com/TheMaxMur/json2dir-bimbo) ![bimbo-lang](https://img.shields.io/badge/-%F0%9F%92%85%20bimbo--lang-E75480?style=flat-square) - A new compiled language built for one mission: rewriting json2dir. The JSON parser and tree walk live in `src/json2dir.bimbo`; a Python frontend emits LLVM IR, and a small C runtime supplies strings, maps and POSIX calls. Functions are `bestie`, loops `strut`, returns `gimme`.
 - [KovalevDima/json2dir-hs](https://github.com/KovalevDima/json2dir-hs) ![Haskell](https://img.shields.io/badge/-Haskell-5D4F85?style=flat-square&logo=haskell&logoColor=white) ![No AI](https://img.shields.io/badge/%E2%9C%8B%20handwritten-no%20AI-black?style=flat-square) - Written by HAND, no LLMs, according to its author. A one-file Haskell take on the scheme with `aeson` and `directory`. Looser than [RFC J2D-1](spec/rfc-json2dir.md): names are joined as paths without validation, scripts get no execute bit, and numbers, booleans and `null` are written to files instead of rejected.
 - [TheMaxMur/json2dir-thesis](https://github.com/TheMaxMur/json2dir-thesis) ![Typst](https://img.shields.io/badge/-Typst-239DAD?style=flat-square&logo=typst&logoColor=white) - The converter written in Typst: validation, traversal, planning and shell quoting live in `.typ` files, and Typst's bundle export emits a shell program that a small launcher runs. Validates the whole tree first, rejects every key with a slash, and offers `--plan` and `--emit` dry runs. Ships with a satirical PhD dissertation and diploma in Doctor of Philosophical Directories.
+- [json2dir-guru/json2dir-ada](https://github.com/json2dir-guru/json2dir-ada) ![Ada](https://img.shields.io/badge/-Ada-0F766E?style=flat-square) - json2dir in Ada. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-aheui](https://github.com/json2dir-guru/json2dir-aheui) ![Aheui](https://img.shields.io/badge/-Aheui-5D4F85?style=flat-square) - json2dir in Aheui, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-algol60](https://github.com/json2dir-guru/json2dir-algol60) ![ALGOL 60](https://img.shields.io/badge/-ALGOL%2060-374151?style=flat-square) - json2dir in ALGOL 60, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-algol68](https://github.com/json2dir-guru/json2dir-algol68) ![ALGOL 68](https://img.shields.io/badge/-ALGOL%2068-374151?style=flat-square) - json2dir in ALGOL 68, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-ansible](https://github.com/json2dir-guru/json2dir-ansible) ![Ansible](https://img.shields.io/badge/-Ansible-0F766E?style=flat-square) - json2dir in Ansible. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-aot](https://github.com/json2dir-guru/json2dir-aot) ![C#](https://img.shields.io/badge/-C%23-6D28D9?style=flat-square) - json2dir in C#, .NET 8 Native AOT. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-apl](https://github.com/json2dir-guru/json2dir-apl) ![APL](https://img.shields.io/badge/-APL-BE185D?style=flat-square) - json2dir in APL, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-arnoldc](https://github.com/json2dir-guru/json2dir-arnoldc) ![ArnoldC](https://img.shields.io/badge/-ArnoldC-6D28D9?style=flat-square) - json2dir in ArnoldC, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-asm](https://github.com/json2dir-guru/json2dir-asm) ![x86-64 assembly](https://img.shields.io/badge/-x86--64%20assembly-374151?style=flat-square) - json2dir in x86-64 assembly (JWasm). Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-awk](https://github.com/json2dir-guru/json2dir-awk) ![AWK](https://img.shields.io/badge/-AWK-5D4F85?style=flat-square) - json2dir in AWK, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-bash](https://github.com/json2dir-guru/json2dir-bash) ![Bash](https://img.shields.io/badge/-Bash-B91C1C?style=flat-square) - json2dir in Bash, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-basic](https://github.com/json2dir-guru/json2dir-basic) ![FreeBASIC](https://img.shields.io/badge/-FreeBASIC-B91C1C?style=flat-square) - json2dir in BASIC (FreeBASIC). Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-bat](https://github.com/json2dir-guru/json2dir-bat) ![Batch](https://img.shields.io/badge/-Batch-6D28D9?style=flat-square) - json2dir in cmd.exe batch. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-bcpl](https://github.com/json2dir-guru/json2dir-bcpl) ![BCPL](https://img.shields.io/badge/-BCPL-B91C1C?style=flat-square) - json2dir in BCPL, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-befunge](https://github.com/json2dir-guru/json2dir-befunge) ![Befunge-98](https://img.shields.io/badge/-Befunge--98-C2410C?style=flat-square) - json2dir in Befunge-98, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-bqn](https://github.com/json2dir-guru/json2dir-bqn) ![BQN](https://img.shields.io/badge/-BQN-0E7490?style=flat-square) - json2dir in BQN. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-braincopter](https://github.com/json2dir-guru/json2dir-braincopter) ![Braincopter](https://img.shields.io/badge/-Braincopter-374151?style=flat-square) - json2dir in Braincopter, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-brainfuck](https://github.com/json2dir-guru/json2dir-brainfuck) ![Brainfuck](https://img.shields.io/badge/-Brainfuck-5D4F85?style=flat-square) - json2dir in Brainfuck, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-brainloller](https://github.com/json2dir-guru/json2dir-brainloller) ![Brainloller](https://img.shields.io/badge/-Brainloller-C2410C?style=flat-square) - json2dir in Brainloller, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-c17](https://github.com/json2dir-guru/json2dir-c17) ![C17](https://img.shields.io/badge/-C17-0E7490?style=flat-square) - json2dir in C17. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-c23](https://github.com/json2dir-guru/json2dir-c23) ![C23](https://img.shields.io/badge/-C23-BE185D?style=flat-square) - json2dir in C23. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-c89](https://github.com/json2dir-guru/json2dir-c89) ![C89](https://img.shields.io/badge/-C89-5D4F85?style=flat-square) - json2dir in ANSI C (C89). Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-cforall](https://github.com/json2dir-guru/json2dir-cforall) ![Cforall](https://img.shields.io/badge/-Cforall-6D28D9?style=flat-square) - json2dir in Cforall. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-checkedc](https://github.com/json2dir-guru/json2dir-checkedc) ![Checked C](https://img.shields.io/badge/-Checked%20C-C2410C?style=flat-square) - json2dir in Checked C. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-chef](https://github.com/json2dir-guru/json2dir-chef) ![Chef](https://img.shields.io/badge/-Chef-A16207?style=flat-square) - json2dir in Chef, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-chez](https://github.com/json2dir-guru/json2dir-chez) ![Chez Scheme](https://img.shields.io/badge/-Chez%20Scheme-1B4F72?style=flat-square) - json2dir in Chez Scheme. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-cil](https://github.com/json2dir-guru/json2dir-cil) ![CIL](https://img.shields.io/badge/-CIL-374151?style=flat-square) - json2dir in hand-written CIL (ilasm). Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-cilk](https://github.com/json2dir-guru/json2dir-cilk) ![Cilk](https://img.shields.io/badge/-Cilk-BE185D?style=flat-square) - json2dir in Cilk (OpenCilk). Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-clojure](https://github.com/json2dir-guru/json2dir-clojure) ![Clojure](https://img.shields.io/badge/-Clojure-C2410C?style=flat-square) - json2dir in Clojure. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-cmake](https://github.com/json2dir-guru/json2dir-cmake) ![CMake](https://img.shields.io/badge/-CMake-1D4ED8?style=flat-square) - json2dir in CMake script. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-cobol](https://github.com/json2dir-guru/json2dir-cobol) ![COBOL](https://img.shields.io/badge/-COBOL-1B4F72?style=flat-square) - json2dir in COBOL. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-commonlisp](https://github.com/json2dir-guru/json2dir-commonlisp) ![Common Lisp](https://img.shields.io/badge/-Common%20Lisp-374151?style=flat-square) - json2dir in Common Lisp. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-compcert](https://github.com/json2dir-guru/json2dir-compcert) ![C (CompCert)](https://img.shields.io/badge/-C%20%28CompCert%29-A16207?style=flat-square) - json2dir in C, compiled with CompCert. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-cow](https://github.com/json2dir-guru/json2dir-cow) ![COW](https://img.shields.io/badge/-COW-A16207?style=flat-square) - json2dir in COW, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-cpp](https://github.com/json2dir-guru/json2dir-cpp) ![C++](https://img.shields.io/badge/-C%2B%2B-5D4F85?style=flat-square) - json2dir in C++. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-crystal](https://github.com/json2dir-guru/json2dir-crystal) ![Crystal](https://img.shields.io/badge/-Crystal-B91C1C?style=flat-square) - json2dir in Crystal. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-d](https://github.com/json2dir-guru/json2dir-d) ![D](https://img.shields.io/badge/-D-1D4ED8?style=flat-square) - json2dir in D. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-dafny](https://github.com/json2dir-guru/json2dir-dafny) ![Dafny](https://img.shields.io/badge/-Dafny-BE185D?style=flat-square) - json2dir in Dafny. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-dart](https://github.com/json2dir-guru/json2dir-dart) ![Dart](https://img.shields.io/badge/-Dart-1D4ED8?style=flat-square) - json2dir in Dart. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-eiffel](https://github.com/json2dir-guru/json2dir-eiffel) ![Eiffel](https://img.shields.io/badge/-Eiffel-047857?style=flat-square) - json2dir in Eiffel. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-elisp](https://github.com/json2dir-guru/json2dir-elisp) ![Emacs Lisp](https://img.shields.io/badge/-Emacs%20Lisp-A16207?style=flat-square) - json2dir in Emacs Lisp. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-elixir](https://github.com/json2dir-guru/json2dir-elixir) ![Elixir](https://img.shields.io/badge/-Elixir-0E7490?style=flat-square) - json2dir in Elixir. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-emojicode](https://github.com/json2dir-guru/json2dir-emojicode) ![Emojicode](https://img.shields.io/badge/-Emojicode-374151?style=flat-square) - json2dir in Emojicode. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-erlang](https://github.com/json2dir-guru/json2dir-erlang) ![Erlang](https://img.shields.io/badge/-Erlang-1B4F72?style=flat-square) - json2dir in Erlang. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-false](https://github.com/json2dir-guru/json2dir-false) ![FALSE](https://img.shields.io/badge/-FALSE-0F766E?style=flat-square) - json2dir in FALSE, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-fennel](https://github.com/json2dir-guru/json2dir-fennel) ![Fennel](https://img.shields.io/badge/-Fennel-047857?style=flat-square) - json2dir in Fennel. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-fish](https://github.com/json2dir-guru/json2dir-fish) ![><> (Fish)](https://img.shields.io/badge/-%3E%3C%3E%20%28Fish%29-1D4ED8?style=flat-square) - json2dir in >&lt;> (Fish), with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-forth](https://github.com/json2dir-guru/json2dir-forth) ![Forth](https://img.shields.io/badge/-Forth-A16207?style=flat-square) - json2dir in Forth. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-fortran](https://github.com/json2dir-guru/json2dir-fortran) ![Fortran](https://img.shields.io/badge/-Fortran-BE185D?style=flat-square) - json2dir in Fortran. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-fractran](https://github.com/json2dir-guru/json2dir-fractran) ![Fractran](https://img.shields.io/badge/-Fractran-1B4F72?style=flat-square) - json2dir in Fractran, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-freepascal](https://github.com/json2dir-guru/json2dir-freepascal) ![Free Pascal](https://img.shields.io/badge/-Free%20Pascal-1B4F72?style=flat-square) - json2dir in Free Pascal. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-fsharp](https://github.com/json2dir-guru/json2dir-fsharp) ![F#](https://img.shields.io/badge/-F%23-047857?style=flat-square) - json2dir in F#. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-gleam](https://github.com/json2dir-guru/json2dir-gleam) ![Gleam](https://img.shields.io/badge/-Gleam-BE185D?style=flat-square) - json2dir in Gleam. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-gnuc](https://github.com/json2dir-guru/json2dir-gnuc) ![GNU C](https://img.shields.io/badge/-GNU%20C-374151?style=flat-square) - json2dir in GNU C. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-go](https://github.com/json2dir-guru/json2dir-go) ![Go](https://img.shields.io/badge/-Go-374151?style=flat-square) - json2dir in Go. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-groovy](https://github.com/json2dir-guru/json2dir-groovy) ![Groovy](https://img.shields.io/badge/-Groovy-0E7490?style=flat-square) - json2dir in Groovy. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-hare](https://github.com/json2dir-guru/json2dir-hare) ![Hare](https://img.shields.io/badge/-Hare-C2410C?style=flat-square) - json2dir in Hare. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-haskell](https://github.com/json2dir-guru/json2dir-haskell) ![Haskell](https://img.shields.io/badge/-Haskell-0E7490?style=flat-square) - json2dir in Haskell. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-hexagony](https://github.com/json2dir-guru/json2dir-hexagony) ![Hexagony](https://img.shields.io/badge/-Hexagony-5D4F85?style=flat-square) - json2dir in Hexagony, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-holyc](https://github.com/json2dir-guru/json2dir-holyc) ![HolyC](https://img.shields.io/badge/-HolyC-1D4ED8?style=flat-square) - json2dir in HolyC. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-idris2](https://github.com/json2dir-guru/json2dir-idris2) ![Idris 2](https://img.shields.io/badge/-Idris%202-1D4ED8?style=flat-square) - json2dir in Idris 2. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-intercal](https://github.com/json2dir-guru/json2dir-intercal) ![INTERCAL](https://img.shields.io/badge/-INTERCAL-C2410C?style=flat-square) - json2dir in INTERCAL, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-j](https://github.com/json2dir-guru/json2dir-j) ![J](https://img.shields.io/badge/-J-BE185D?style=flat-square) - json2dir in J. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-janet](https://github.com/json2dir-guru/json2dir-janet) ![Janet](https://img.shields.io/badge/-Janet-6D28D9?style=flat-square) - json2dir in Janet. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-java](https://github.com/json2dir-guru/json2dir-java) ![Java](https://img.shields.io/badge/-Java-B91C1C?style=flat-square) - json2dir in Java. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-jq](https://github.com/json2dir-guru/json2dir-jq) ![jq](https://img.shields.io/badge/-jq-A16207?style=flat-square) - json2dir in jq, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-js](https://github.com/json2dir-guru/json2dir-js) ![JavaScript](https://img.shields.io/badge/-JavaScript-1B4F72?style=flat-square) - json2dir in plain JavaScript. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-jscript](https://github.com/json2dir-guru/json2dir-jscript) ![JScript](https://img.shields.io/badge/-JScript-B91C1C?style=flat-square) - json2dir in JScript (Wine). Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-jsonnet](https://github.com/json2dir-guru/json2dir-jsonnet) ![Jsonnet](https://img.shields.io/badge/-Jsonnet-0F766E?style=flat-square) - json2dir in Jsonnet, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-jsonscript](https://github.com/json2dir-guru/json2dir-jsonscript) ![JSONScript](https://img.shields.io/badge/-JSONScript-1B4F72?style=flat-square) - json2dir in JSONScript. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-julia](https://github.com/json2dir-guru/json2dir-julia) ![Julia](https://img.shields.io/badge/-Julia-0F766E?style=flat-square) - json2dir in Julia. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-k](https://github.com/json2dir-guru/json2dir-k) ![K](https://img.shields.io/badge/-K-1D4ED8?style=flat-square) - json2dir in K, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-koka](https://github.com/json2dir-guru/json2dir-koka) ![Koka](https://img.shields.io/badge/-Koka-5D4F85?style=flat-square) - json2dir in Koka. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-kotlin](https://github.com/json2dir-guru/json2dir-kotlin) ![Kotlin](https://img.shields.io/badge/-Kotlin-0F766E?style=flat-square) - json2dir in Kotlin. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-kr](https://github.com/json2dir-guru/json2dir-kr) ![K&R C](https://img.shields.io/badge/-K%26R%20C-BE185D?style=flat-square) - json2dir in K&R C. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-ksh](https://github.com/json2dir-guru/json2dir-ksh) ![ksh93](https://img.shields.io/badge/-ksh93-374151?style=flat-square) - json2dir in ksh93. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-logo](https://github.com/json2dir-guru/json2dir-logo) ![Logo](https://img.shields.io/badge/-Logo-5D4F85?style=flat-square) - json2dir in Logo, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-lolcode](https://github.com/json2dir-guru/json2dir-lolcode) ![LOLCODE](https://img.shields.io/badge/-LOLCODE-BE185D?style=flat-square) - json2dir in LOLCODE, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-lua](https://github.com/json2dir-guru/json2dir-lua) ![Lua](https://img.shields.io/badge/-Lua-1B4F72?style=flat-square) - json2dir in Lua 5.4, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-luajit](https://github.com/json2dir-guru/json2dir-luajit) ![LuaJIT](https://img.shields.io/badge/-LuaJIT-374151?style=flat-square) - json2dir in LuaJIT. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-luatex](https://github.com/json2dir-guru/json2dir-luatex) ![LuaTeX](https://img.shields.io/badge/-LuaTeX-C2410C?style=flat-square) - json2dir in LuaTeX, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-malbolge](https://github.com/json2dir-guru/json2dir-malbolge) ![Malbolge Unshackled](https://img.shields.io/badge/-Malbolge%20Unshackled-374151?style=flat-square) - json2dir in Malbolge Unshackled, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-mercury](https://github.com/json2dir-guru/json2dir-mercury) ![Mercury](https://img.shields.io/badge/-Mercury-1B4F72?style=flat-square) - json2dir in Mercury. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-modula2](https://github.com/json2dir-guru/json2dir-modula2) ![Modula-2](https://img.shields.io/badge/-Modula--2-6D28D9?style=flat-square) - json2dir in Modula-2. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-mojo](https://github.com/json2dir-guru/json2dir-mojo) ![Mojo](https://img.shields.io/badge/-Mojo-374151?style=flat-square) - json2dir in Mojo. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-neovim](https://github.com/json2dir-guru/json2dir-neovim) ![Neovim Lua](https://img.shields.io/badge/-Neovim%20Lua-A16207?style=flat-square) - json2dir in Neovim Lua. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-nim](https://github.com/json2dir-guru/json2dir-nim) ![Nim](https://img.shields.io/badge/-Nim-6D28D9?style=flat-square) - json2dir in Nim. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-njs](https://github.com/json2dir-guru/json2dir-njs) ![nginx njs](https://img.shields.io/badge/-nginx%20njs-0F766E?style=flat-square) - json2dir in nginx njs + WebDAV. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-objc](https://github.com/json2dir-guru/json2dir-objc) ![Objective-C](https://img.shields.io/badge/-Objective--C-BE185D?style=flat-square) - json2dir in Objective-C. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-ocaml](https://github.com/json2dir-guru/json2dir-ocaml) ![OCaml](https://img.shields.io/badge/-OCaml-374151?style=flat-square) - json2dir in OCaml. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-octave](https://github.com/json2dir-guru/json2dir-octave) ![MATLAB/Octave](https://img.shields.io/badge/-MATLAB%2FOctave-0F766E?style=flat-square) - json2dir in MATLAB/Octave. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-octave-pure](https://github.com/json2dir-guru/json2dir-octave-pure) ![MATLAB/Octave](https://img.shields.io/badge/-MATLAB%2FOctave-0F766E?style=flat-square) - json2dir in MATLAB/Octave, without Java. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-odin](https://github.com/json2dir-guru/json2dir-odin) ![Odin](https://img.shields.io/badge/-Odin-5D4F85?style=flat-square) - json2dir in Odin. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-ook](https://github.com/json2dir-guru/json2dir-ook) ![Ook!](https://img.shields.io/badge/-Ook%21-047857?style=flat-square) - json2dir in Ook!, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-perl](https://github.com/json2dir-guru/json2dir-perl) ![Perl](https://img.shields.io/badge/-Perl-6D28D9?style=flat-square) - json2dir in Perl. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-php](https://github.com/json2dir-guru/json2dir-php) ![PHP](https://img.shields.io/badge/-PHP-0F766E?style=flat-square) - json2dir in PHP. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-piet](https://github.com/json2dir-guru/json2dir-piet) ![Piet](https://img.shields.io/badge/-Piet-A16207?style=flat-square) - json2dir in Piet, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-pikachu](https://github.com/json2dir-guru/json2dir-pikachu) ![Pikachu](https://img.shields.io/badge/-Pikachu-5D4F85?style=flat-square) - json2dir in Pikachu, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-pli](https://github.com/json2dir-guru/json2dir-pli) ![PL/I](https://img.shields.io/badge/-PL%2FI-1D4ED8?style=flat-square) - json2dir in PL/I. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-pony](https://github.com/json2dir-guru/json2dir-pony) ![Pony](https://img.shields.io/badge/-Pony-BE185D?style=flat-square) - json2dir in Pony. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-prolog](https://github.com/json2dir-guru/json2dir-prolog) ![Prolog](https://img.shields.io/badge/-Prolog-6D28D9?style=flat-square) - json2dir in Prolog. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-puppet](https://github.com/json2dir-guru/json2dir-puppet) ![Puppet](https://img.shields.io/badge/-Puppet-1B4F72?style=flat-square) - json2dir in Puppet. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-purescript](https://github.com/json2dir-guru/json2dir-purescript) ![PureScript](https://img.shields.io/badge/-PureScript-6D28D9?style=flat-square) - json2dir in PureScript. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-pwsh](https://github.com/json2dir-guru/json2dir-pwsh) ![PowerShell](https://img.shields.io/badge/-PowerShell-374151?style=flat-square) - json2dir in PowerShell. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-python](https://github.com/json2dir-guru/json2dir-python) ![Python](https://img.shields.io/badge/-Python-0F766E?style=flat-square) - json2dir in Python. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-r](https://github.com/json2dir-guru/json2dir-r) ![R](https://img.shields.io/badge/-R-6D28D9?style=flat-square) - json2dir in R. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-racket](https://github.com/json2dir-guru/json2dir-racket) ![Racket](https://img.shields.io/badge/-Racket-C2410C?style=flat-square) - json2dir in Racket. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-raku](https://github.com/json2dir-guru/json2dir-raku) ![Raku](https://img.shields.io/badge/-Raku-6D28D9?style=flat-square) - json2dir in Raku. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-rexx](https://github.com/json2dir-guru/json2dir-rexx) ![REXX](https://img.shields.io/badge/-REXX-1D4ED8?style=flat-square) - json2dir in REXX. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-roc](https://github.com/json2dir-guru/json2dir-roc) ![Roc](https://img.shields.io/badge/-Roc-374151?style=flat-square) - json2dir in Roc. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-rockstar](https://github.com/json2dir-guru/json2dir-rockstar) ![Rockstar](https://img.shields.io/badge/-Rockstar-0E7490?style=flat-square) - json2dir in Rockstar, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-rocq](https://github.com/json2dir-guru/json2dir-rocq) ![Rocq](https://img.shields.io/badge/-Rocq-1B4F72?style=flat-square) - json2dir in Rocq (extracted to OCaml). Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-ruby](https://github.com/json2dir-guru/json2dir-ruby) ![Ruby](https://img.shields.io/badge/-Ruby-1D4ED8?style=flat-square) - json2dir in Ruby. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-scala](https://github.com/json2dir-guru/json2dir-scala) ![Scala](https://img.shields.io/badge/-Scala-374151?style=flat-square) - json2dir in Scala. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-sed](https://github.com/json2dir-guru/json2dir-sed) ![sed](https://img.shields.io/badge/-sed-0E7490?style=flat-square) - json2dir in sed, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-shakespeare](https://github.com/json2dir-guru/json2dir-shakespeare) ![Shakespeare](https://img.shields.io/badge/-Shakespeare-374151?style=flat-square) - json2dir in the Shakespeare Programming Language, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-smalltalk](https://github.com/json2dir-guru/json2dir-smalltalk) ![Smalltalk](https://img.shields.io/badge/-Smalltalk-374151?style=flat-square) - json2dir in Smalltalk. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-sml](https://github.com/json2dir-guru/json2dir-sml) ![Standard ML](https://img.shields.io/badge/-Standard%20ML-B91C1C?style=flat-square) - json2dir in Standard ML. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-snobol4](https://github.com/json2dir-guru/json2dir-snobol4) ![SNOBOL4](https://img.shields.io/badge/-SNOBOL4-B91C1C?style=flat-square) - json2dir in SNOBOL4, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-sqlite](https://github.com/json2dir-guru/json2dir-sqlite) ![SQL](https://img.shields.io/badge/-SQL-1B4F72?style=flat-square) - json2dir in SQL (SQLite). Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-subleq](https://github.com/json2dir-guru/json2dir-subleq) ![Subleq](https://img.shields.io/badge/-Subleq-C2410C?style=flat-square) - json2dir in Subleq, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-swift](https://github.com/json2dir-guru/json2dir-swift) ![Swift](https://img.shields.io/badge/-Swift-6D28D9?style=flat-square) - json2dir in Swift. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-systemverilog](https://github.com/json2dir-guru/json2dir-systemverilog) ![SystemVerilog](https://img.shields.io/badge/-SystemVerilog-1B4F72?style=flat-square) - json2dir in SystemVerilog, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-taxi](https://github.com/json2dir-guru/json2dir-taxi) ![Taxi](https://img.shields.io/badge/-Taxi-0E7490?style=flat-square) - json2dir in Taxi, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-tcl](https://github.com/json2dir-guru/json2dir-tcl) ![Tcl](https://img.shields.io/badge/-Tcl-6D28D9?style=flat-square) - json2dir in Tcl. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-thue](https://github.com/json2dir-guru/json2dir-thue) ![Thue](https://img.shields.io/badge/-Thue-6D28D9?style=flat-square) - json2dir in Thue, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-ts](https://github.com/json2dir-guru/json2dir-ts) ![TypeScript](https://img.shields.io/badge/-TypeScript-0E7490?style=flat-square) - json2dir in TypeScript. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-unicon](https://github.com/json2dir-guru/json2dir-unicon) ![Unicon](https://img.shields.io/badge/-Unicon-0F766E?style=flat-square) - json2dir in Unicon (Icon). Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-unlambda](https://github.com/json2dir-guru/json2dir-unlambda) ![Unlambda](https://img.shields.io/badge/-Unlambda-A16207?style=flat-square) - json2dir in Unlambda, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-v](https://github.com/json2dir-guru/json2dir-v) ![V](https://img.shields.io/badge/-V-A16207?style=flat-square) - json2dir in V. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-vala](https://github.com/json2dir-guru/json2dir-vala) ![Vala](https://img.shields.io/badge/-Vala-1D4ED8?style=flat-square) - json2dir in Vala. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-vbnet](https://github.com/json2dir-guru/json2dir-vbnet) ![VB.NET](https://img.shields.io/badge/-VB.NET-5D4F85?style=flat-square) - json2dir in VB.NET. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-vbs](https://github.com/json2dir-guru/json2dir-vbs) ![VBScript](https://img.shields.io/badge/-VBScript-BE185D?style=flat-square) - json2dir in VBScript (Wine). Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-velato](https://github.com/json2dir-guru/json2dir-velato) ![Velato](https://img.shields.io/badge/-Velato-047857?style=flat-square) - json2dir in Velato, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-vhdl](https://github.com/json2dir-guru/json2dir-vhdl) ![VHDL](https://img.shields.io/badge/-VHDL-0F766E?style=flat-square) - json2dir in VHDL, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-vim](https://github.com/json2dir-guru/json2dir-vim) ![Vim script](https://img.shields.io/badge/-Vim%20script-5D4F85?style=flat-square) - json2dir in Vim script, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-wasm](https://github.com/json2dir-guru/json2dir-wasm) ![WebAssembly](https://img.shields.io/badge/-WebAssembly-A16207?style=flat-square) - json2dir in hand-written WebAssembly (WASI, Bun). Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-whitespace](https://github.com/json2dir-guru/json2dir-whitespace) ![Whitespace](https://img.shields.io/badge/-Whitespace-374151?style=flat-square) - json2dir in Whitespace, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-why3](https://github.com/json2dir-guru/json2dir-why3) ![WhyML](https://img.shields.io/badge/-WhyML-047857?style=flat-square) - json2dir in WhyML (Why3, extracted to OCaml). Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-xslt](https://github.com/json2dir-guru/json2dir-xslt) ![XSLT](https://img.shields.io/badge/-XSLT-6D28D9?style=flat-square) - json2dir in XSLT 3.0, with a shell launcher for the writes. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
+- [json2dir-guru/json2dir-zsh](https://github.com/json2dir-guru/json2dir-zsh) ![zsh](https://img.shields.io/badge/-zsh-374151?style=flat-square) - json2dir in zsh. Part of the [json2dir-guru](https://github.com/json2dir-guru) collection.
 
 ## Alternative takes
 
@@ -92,152 +237,6 @@ The root of the document must be an object. See [RFC J2D-1](spec/rfc-json2dir.md
 - [71g3pf4c3/json2philosophy](https://github.com/71g3pf4c3/json2philosophy) ![PDF](https://img.shields.io/badge/-PDF%20book-lightgrey?style=flat-square) - *Being and JSON*, a 51-page book in Russian on the ontology of conversion: Plato's two worlds as eidos and inode, Heidegger's Dasein of the user, and `--check` exit code 3 as the call of conscience. Built from HTML with WeasyPrint.
 - [71g3pf4c3/voice2dir](https://github.com/71g3pf4c3/voice2dir) ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) - Dictate a tree in Russian: whisper transcribes the audio, a deterministic DSL parser turns it into a json2dir document, the tree is created and then checked by reading it back. Takes any audio ffmpeg can decode, or the microphone.
 - [71g3pf4c3/json2dir](https://github.com/71g3pf4c3/json2dir) ![Novella](https://img.shields.io/badge/-Novella-lightgrey?style=flat-square) - *J son's plan to become a director*: a Russian novella in a prologue, eight chapters and an epilogue about J's son, a value at `J/son`, who leaves the house of braces to become a directory.
-
-## json2dir-guru: 141 languages
-
-[json2dir-guru](https://github.com/json2dir-guru) ports json2dir to 141 languages and stacks, one repository each, all MIT. Languages that cannot write files use a small shell launcher in the style of json2dir-nix; those are marked *launcher*. Every port is run against the same cases by [json2dir-tester](https://github.com/json2dir-guru/json2dir-tester), including this list's [conformance suite](conformance/README.md).
-
-- [json2dir-ada](https://github.com/json2dir-guru/json2dir-ada) - Ada.
-- [json2dir-aheui](https://github.com/json2dir-guru/json2dir-aheui) - Aheui, *launcher*.
-- [json2dir-algol60](https://github.com/json2dir-guru/json2dir-algol60) - ALGOL 60, *launcher*.
-- [json2dir-algol68](https://github.com/json2dir-guru/json2dir-algol68) - ALGOL 68, *launcher*.
-- [json2dir-ansible](https://github.com/json2dir-guru/json2dir-ansible) - Ansible.
-- [json2dir-aot](https://github.com/json2dir-guru/json2dir-aot) - C#, .NET 8 Native AOT.
-- [json2dir-apl](https://github.com/json2dir-guru/json2dir-apl) - APL, *launcher*.
-- [json2dir-arnoldc](https://github.com/json2dir-guru/json2dir-arnoldc) - ArnoldC, *launcher*.
-- [json2dir-asm](https://github.com/json2dir-guru/json2dir-asm) - x86-64 assembly (JWasm).
-- [json2dir-awk](https://github.com/json2dir-guru/json2dir-awk) - AWK, *launcher*.
-- [json2dir-bash](https://github.com/json2dir-guru/json2dir-bash) - Bash, *launcher*.
-- [json2dir-basic](https://github.com/json2dir-guru/json2dir-basic) - BASIC (FreeBASIC).
-- [json2dir-bat](https://github.com/json2dir-guru/json2dir-bat) - cmd.exe batch.
-- [json2dir-bcpl](https://github.com/json2dir-guru/json2dir-bcpl) - BCPL, *launcher*.
-- [json2dir-befunge](https://github.com/json2dir-guru/json2dir-befunge) - Befunge-98, *launcher*.
-- [json2dir-bqn](https://github.com/json2dir-guru/json2dir-bqn) - BQN.
-- [json2dir-braincopter](https://github.com/json2dir-guru/json2dir-braincopter) - Braincopter, *launcher*.
-- [json2dir-brainfuck](https://github.com/json2dir-guru/json2dir-brainfuck) - Brainfuck, *launcher*.
-- [json2dir-brainloller](https://github.com/json2dir-guru/json2dir-brainloller) - Brainloller, *launcher*.
-- [json2dir-c17](https://github.com/json2dir-guru/json2dir-c17) - C17.
-- [json2dir-c23](https://github.com/json2dir-guru/json2dir-c23) - C23.
-- [json2dir-c89](https://github.com/json2dir-guru/json2dir-c89) - ANSI C (C89).
-- [json2dir-cforall](https://github.com/json2dir-guru/json2dir-cforall) - Cforall.
-- [json2dir-checkedc](https://github.com/json2dir-guru/json2dir-checkedc) - Checked C.
-- [json2dir-chef](https://github.com/json2dir-guru/json2dir-chef) - Chef, *launcher*.
-- [json2dir-chez](https://github.com/json2dir-guru/json2dir-chez) - Chez Scheme.
-- [json2dir-cil](https://github.com/json2dir-guru/json2dir-cil) - hand-written CIL (ilasm).
-- [json2dir-cilk](https://github.com/json2dir-guru/json2dir-cilk) - Cilk (OpenCilk).
-- [json2dir-clojure](https://github.com/json2dir-guru/json2dir-clojure) - Clojure.
-- [json2dir-cmake](https://github.com/json2dir-guru/json2dir-cmake) - CMake script.
-- [json2dir-cobol](https://github.com/json2dir-guru/json2dir-cobol) - COBOL.
-- [json2dir-commonlisp](https://github.com/json2dir-guru/json2dir-commonlisp) - Common Lisp.
-- [json2dir-compcert](https://github.com/json2dir-guru/json2dir-compcert) - C, compiled with CompCert.
-- [json2dir-cow](https://github.com/json2dir-guru/json2dir-cow) - COW, *launcher*.
-- [json2dir-cpp](https://github.com/json2dir-guru/json2dir-cpp) - C++.
-- [json2dir-crystal](https://github.com/json2dir-guru/json2dir-crystal) - Crystal.
-- [json2dir-d](https://github.com/json2dir-guru/json2dir-d) - D.
-- [json2dir-dafny](https://github.com/json2dir-guru/json2dir-dafny) - Dafny.
-- [json2dir-dart](https://github.com/json2dir-guru/json2dir-dart) - Dart.
-- [json2dir-eiffel](https://github.com/json2dir-guru/json2dir-eiffel) - Eiffel.
-- [json2dir-elisp](https://github.com/json2dir-guru/json2dir-elisp) - Emacs Lisp.
-- [json2dir-elixir](https://github.com/json2dir-guru/json2dir-elixir) - Elixir.
-- [json2dir-emojicode](https://github.com/json2dir-guru/json2dir-emojicode) - Emojicode.
-- [json2dir-erlang](https://github.com/json2dir-guru/json2dir-erlang) - Erlang.
-- [json2dir-false](https://github.com/json2dir-guru/json2dir-false) - FALSE, *launcher*.
-- [json2dir-fennel](https://github.com/json2dir-guru/json2dir-fennel) - Fennel.
-- [json2dir-fish](https://github.com/json2dir-guru/json2dir-fish) - >&lt;> (Fish), *launcher*.
-- [json2dir-forth](https://github.com/json2dir-guru/json2dir-forth) - Forth.
-- [json2dir-fortran](https://github.com/json2dir-guru/json2dir-fortran) - Fortran.
-- [json2dir-fractran](https://github.com/json2dir-guru/json2dir-fractran) - Fractran, *launcher*.
-- [json2dir-freepascal](https://github.com/json2dir-guru/json2dir-freepascal) - Free Pascal.
-- [json2dir-fsharp](https://github.com/json2dir-guru/json2dir-fsharp) - F#.
-- [json2dir-gleam](https://github.com/json2dir-guru/json2dir-gleam) - Gleam.
-- [json2dir-gnuc](https://github.com/json2dir-guru/json2dir-gnuc) - GNU C.
-- [json2dir-go](https://github.com/json2dir-guru/json2dir-go) - Go.
-- [json2dir-groovy](https://github.com/json2dir-guru/json2dir-groovy) - Groovy.
-- [json2dir-hare](https://github.com/json2dir-guru/json2dir-hare) - Hare.
-- [json2dir-haskell](https://github.com/json2dir-guru/json2dir-haskell) - Haskell.
-- [json2dir-hexagony](https://github.com/json2dir-guru/json2dir-hexagony) - Hexagony, *launcher*.
-- [json2dir-holyc](https://github.com/json2dir-guru/json2dir-holyc) - HolyC.
-- [json2dir-idris2](https://github.com/json2dir-guru/json2dir-idris2) - Idris 2.
-- [json2dir-intercal](https://github.com/json2dir-guru/json2dir-intercal) - INTERCAL, *launcher*.
-- [json2dir-j](https://github.com/json2dir-guru/json2dir-j) - J.
-- [json2dir-janet](https://github.com/json2dir-guru/json2dir-janet) - Janet.
-- [json2dir-java](https://github.com/json2dir-guru/json2dir-java) - Java.
-- [json2dir-jq](https://github.com/json2dir-guru/json2dir-jq) - jq, *launcher*.
-- [json2dir-js](https://github.com/json2dir-guru/json2dir-js) - plain JavaScript.
-- [json2dir-jscript](https://github.com/json2dir-guru/json2dir-jscript) - JScript (Wine).
-- [json2dir-jsonnet](https://github.com/json2dir-guru/json2dir-jsonnet) - Jsonnet, *launcher*.
-- [json2dir-jsonscript](https://github.com/json2dir-guru/json2dir-jsonscript) - JSONScript.
-- [json2dir-julia](https://github.com/json2dir-guru/json2dir-julia) - Julia.
-- [json2dir-k](https://github.com/json2dir-guru/json2dir-k) - K, *launcher*.
-- [json2dir-koka](https://github.com/json2dir-guru/json2dir-koka) - Koka.
-- [json2dir-kotlin](https://github.com/json2dir-guru/json2dir-kotlin) - Kotlin.
-- [json2dir-kr](https://github.com/json2dir-guru/json2dir-kr) - K&R C.
-- [json2dir-ksh](https://github.com/json2dir-guru/json2dir-ksh) - ksh93.
-- [json2dir-logo](https://github.com/json2dir-guru/json2dir-logo) - Logo, *launcher*.
-- [json2dir-lolcode](https://github.com/json2dir-guru/json2dir-lolcode) - LOLCODE, *launcher*.
-- [json2dir-lua](https://github.com/json2dir-guru/json2dir-lua) - Lua 5.4, *launcher*.
-- [json2dir-luajit](https://github.com/json2dir-guru/json2dir-luajit) - LuaJIT.
-- [json2dir-luatex](https://github.com/json2dir-guru/json2dir-luatex) - LuaTeX, *launcher*.
-- [json2dir-malbolge](https://github.com/json2dir-guru/json2dir-malbolge) - Malbolge Unshackled, *launcher*.
-- [json2dir-mercury](https://github.com/json2dir-guru/json2dir-mercury) - Mercury.
-- [json2dir-modula2](https://github.com/json2dir-guru/json2dir-modula2) - Modula-2.
-- [json2dir-mojo](https://github.com/json2dir-guru/json2dir-mojo) - Mojo.
-- [json2dir-neovim](https://github.com/json2dir-guru/json2dir-neovim) - Neovim Lua.
-- [json2dir-nim](https://github.com/json2dir-guru/json2dir-nim) - Nim.
-- [json2dir-njs](https://github.com/json2dir-guru/json2dir-njs) - nginx njs + WebDAV.
-- [json2dir-objc](https://github.com/json2dir-guru/json2dir-objc) - Objective-C.
-- [json2dir-ocaml](https://github.com/json2dir-guru/json2dir-ocaml) - OCaml.
-- [json2dir-octave](https://github.com/json2dir-guru/json2dir-octave) - MATLAB/Octave.
-- [json2dir-octave-pure](https://github.com/json2dir-guru/json2dir-octave-pure) - MATLAB/Octave, without Java.
-- [json2dir-odin](https://github.com/json2dir-guru/json2dir-odin) - Odin.
-- [json2dir-ook](https://github.com/json2dir-guru/json2dir-ook) - Ook!, *launcher*.
-- [json2dir-perl](https://github.com/json2dir-guru/json2dir-perl) - Perl.
-- [json2dir-php](https://github.com/json2dir-guru/json2dir-php) - PHP.
-- [json2dir-piet](https://github.com/json2dir-guru/json2dir-piet) - Piet, *launcher*.
-- [json2dir-pikachu](https://github.com/json2dir-guru/json2dir-pikachu) - Pikachu, *launcher*.
-- [json2dir-pli](https://github.com/json2dir-guru/json2dir-pli) - PL/I.
-- [json2dir-pony](https://github.com/json2dir-guru/json2dir-pony) - Pony.
-- [json2dir-prolog](https://github.com/json2dir-guru/json2dir-prolog) - Prolog.
-- [json2dir-puppet](https://github.com/json2dir-guru/json2dir-puppet) - Puppet.
-- [json2dir-purescript](https://github.com/json2dir-guru/json2dir-purescript) - PureScript.
-- [json2dir-pwsh](https://github.com/json2dir-guru/json2dir-pwsh) - PowerShell.
-- [json2dir-python](https://github.com/json2dir-guru/json2dir-python) - Python.
-- [json2dir-r](https://github.com/json2dir-guru/json2dir-r) - R.
-- [json2dir-racket](https://github.com/json2dir-guru/json2dir-racket) - Racket.
-- [json2dir-raku](https://github.com/json2dir-guru/json2dir-raku) - Raku.
-- [json2dir-rexx](https://github.com/json2dir-guru/json2dir-rexx) - REXX.
-- [json2dir-roc](https://github.com/json2dir-guru/json2dir-roc) - Roc.
-- [json2dir-rockstar](https://github.com/json2dir-guru/json2dir-rockstar) - Rockstar, *launcher*.
-- [json2dir-rocq](https://github.com/json2dir-guru/json2dir-rocq) - Rocq (extracted to OCaml).
-- [json2dir-ruby](https://github.com/json2dir-guru/json2dir-ruby) - Ruby.
-- [json2dir-scala](https://github.com/json2dir-guru/json2dir-scala) - Scala.
-- [json2dir-sed](https://github.com/json2dir-guru/json2dir-sed) - sed, *launcher*.
-- [json2dir-shakespeare](https://github.com/json2dir-guru/json2dir-shakespeare) - the Shakespeare Programming Language, *launcher*.
-- [json2dir-smalltalk](https://github.com/json2dir-guru/json2dir-smalltalk) - Smalltalk.
-- [json2dir-sml](https://github.com/json2dir-guru/json2dir-sml) - Standard ML.
-- [json2dir-snobol4](https://github.com/json2dir-guru/json2dir-snobol4) - SNOBOL4, *launcher*.
-- [json2dir-sqlite](https://github.com/json2dir-guru/json2dir-sqlite) - SQL (SQLite).
-- [json2dir-subleq](https://github.com/json2dir-guru/json2dir-subleq) - Subleq, *launcher*.
-- [json2dir-swift](https://github.com/json2dir-guru/json2dir-swift) - Swift.
-- [json2dir-systemverilog](https://github.com/json2dir-guru/json2dir-systemverilog) - SystemVerilog, *launcher*.
-- [json2dir-taxi](https://github.com/json2dir-guru/json2dir-taxi) - Taxi, *launcher*.
-- [json2dir-tcl](https://github.com/json2dir-guru/json2dir-tcl) - Tcl.
-- [json2dir-thue](https://github.com/json2dir-guru/json2dir-thue) - Thue, *launcher*.
-- [json2dir-ts](https://github.com/json2dir-guru/json2dir-ts) - TypeScript.
-- [json2dir-unicon](https://github.com/json2dir-guru/json2dir-unicon) - Unicon (Icon).
-- [json2dir-unlambda](https://github.com/json2dir-guru/json2dir-unlambda) - Unlambda, *launcher*.
-- [json2dir-v](https://github.com/json2dir-guru/json2dir-v) - V.
-- [json2dir-vala](https://github.com/json2dir-guru/json2dir-vala) - Vala.
-- [json2dir-vbnet](https://github.com/json2dir-guru/json2dir-vbnet) - VB.NET.
-- [json2dir-vbs](https://github.com/json2dir-guru/json2dir-vbs) - VBScript (Wine).
-- [json2dir-velato](https://github.com/json2dir-guru/json2dir-velato) - Velato, *launcher*.
-- [json2dir-vhdl](https://github.com/json2dir-guru/json2dir-vhdl) - VHDL, *launcher*.
-- [json2dir-vim](https://github.com/json2dir-guru/json2dir-vim) - Vim script, *launcher*.
-- [json2dir-wasm](https://github.com/json2dir-guru/json2dir-wasm) - hand-written WebAssembly (WASI, Bun).
-- [json2dir-whitespace](https://github.com/json2dir-guru/json2dir-whitespace) - Whitespace, *launcher*.
-- [json2dir-why3](https://github.com/json2dir-guru/json2dir-why3) - WhyML (Why3, extracted to OCaml).
-- [json2dir-xslt](https://github.com/json2dir-guru/json2dir-xslt) - XSLT 3.0, *launcher*.
-- [json2dir-zsh](https://github.com/json2dir-guru/json2dir-zsh) - zsh.
 
 ## Inverse tools
 
