@@ -44,6 +44,7 @@
 - [Inverse tools](#inverse-tools)
 - [Tooling](#tooling)
 - [Rebuttals](#rebuttals)
+- [Articles and usage](#articles-and-usage)
 - [At a glance](#at-a-glance)
 - [Wanted](#wanted)
 - [Contributing](#contributing)
@@ -256,6 +257,12 @@ Projects that exist to explain why `json2dir` should not.
 
 - [71g3pf4c3/json2json](https://github.com/71g3pf4c3/json2json) ![Rust](https://img.shields.io/badge/-Rust-000000?style=flat-square&logo=rust&logoColor=white) - Reads JSON and writes the same JSON back, preserving key order, duplicate keys and number forms. Argues that `json → dir → json` is a round-trip best done in one step.
 - [71g3pf4c3/dir2dir](https://github.com/71g3pf4c3/dir2dir) ![README only](https://img.shields.io/badge/-README%20only-lightgrey?style=flat-square) - A manifesto for copying directory trees through a typed intermediate representation, with plans, diffs and dry-runs. No code yet.
+
+## Articles and usage
+
+- [json2dir: Directory archives, made human-readable](https://lobste.rs/s/hfgsex/json2dir_directory_archives_made_human) - Discussion on Lobsters, submitted by the author of json2dir.
+- [From JSON to File-System in One Step](https://www.blog.brightcoding.dev/2025/08/20/from-json-to-file-system-in-one-step) - Bright Coding, August 2025: a walk-through of the conversion scheme and where it fits.
+- [alurm/x: apply-dotfiles](https://github.com/alurm/x/blob/main/mac/packages/apply-dotfiles.nix) - The author's own dotfiles: a Nix attribute set in the json2dir scheme ([`mac/home/config/default.nix`](https://github.com/alurm/x/blob/main/mac/home/config/default.nix)), evaluated with `nix eval --json` and piped into json2dir.
 
 ## At a glance
 

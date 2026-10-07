@@ -12,6 +12,7 @@ Thank you for adding to the list.
    - **Inverse tools**: directory tree to JSON.
    - **Tooling**: wrappers and tools built around existing implementations.
    - **Rebuttals**: projects arguing against `json2dir`.
+   - **Articles and usage**: write-ups, discussions and real-world setups that use json2dir. These are not counted in *At a glance*.
 4. Use this format:
 
    ```markdown
