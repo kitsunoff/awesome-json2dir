@@ -30,6 +30,39 @@
     });
   }
 
+  // results.json is data, not markup: counts must be numbers, links must be
+  // https, and lists must be lists before anything reaches innerHTML.
+  function count(n) {
+    n = Number(n);
+    return isFinite(n) && n >= 0 ? Math.floor(n) : 0;
+  }
+
+  function link(url) {
+    return typeof url === "string" && /^https:\/\//i.test(url) ? url : "";
+  }
+
+  function list(v) {
+    return [].concat(v == null ? [] : v).map(String);
+  }
+
+  function normalize(x) {
+    return {
+      name: String(x.name),
+      language: String(x.language),
+      repo: link(x.repo),
+      passed: count(x.passed),
+      failed: count(x.failed),
+      state: String(x.state),
+      kinds: list(x.kinds),
+      verification: String(x.verification),
+      origin: list(x.origin),
+      approach: list(x.approach),
+      failures: [].concat(x.failures || []).map(function (f) {
+        return { case: String(f && f.case), reason: String(f && f.reason) };
+      }),
+    };
+  }
+
   function score(x) {
     var run = x.passed + x.failed;
     return run ? x.passed / run : 0;
@@ -142,7 +175,7 @@
       return r.json();
     })
     .then(function (json) {
-      data = json;
+      data = { now: String(json.now), impls: [].concat(json.impls || []).map(normalize) };
       render();
     })
     .catch(function (err) {
