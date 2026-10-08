@@ -1,0 +1,17 @@
+.b-controls { display: flex; flex-wrap: wrap; gap: 12px; margin: 16px 0; }
+.b-controls label { display: flex; flex-direction: column; gap: 4px; font-size: .85em; }
+.b-controls select { font: inherit; padding: 4px; max-width: 220px; background: var(--bg); color: inherit; }
+.b-controls .b-check { flex-direction: row; align-items: center; }
+.b-meta { font-size: .85em; opacity: .8; }
+.b-scroll { overflow-x: auto; }
+.b-table { width: 100%; font-size: .85em; font-variant-numeric: tabular-nums; }
+.b-table td, .b-table th { padding: 8px; vertical-align: top; }
+.b-table button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; text-decoration: underline; }
+.b-table details { max-width: 300px; overflow-wrap: anywhere; }
+.b-bar { display: block; position: relative; width: 130px; height: 20px; background: rgba(127, 127, 127, .12); }
+.b-iqr { position: absolute; top: 5px; height: 10px; background: #60a5fa; min-width: 1px; }
+.b-median { position: absolute; top: 2px; height: 16px; width: 2px; background: #1d4ed8; }
+.b-chart { width: 100%; min-width: 300px; color: inherit; }
+.b-chart text { fill: currentColor; font: 12px system-ui, sans-serif; }
+.b-legend { display: inline-block; margin-right: 14px; font-size: .85em; }
+#benchmarks pre { white-space: pre-wrap; overflow-wrap: anywhere; }
